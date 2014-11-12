@@ -5,4 +5,4 @@ Share your favorites Apps on AppCorner and discover great new Apps around the wo
 
 **Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
 
-![Alt text](preview/1.png "Preview”) 
+![Alt text](preview/1.png "Preview songs") 
