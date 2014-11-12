@@ -6,6 +6,7 @@ Share your favorites Apps on AppCorner and discover great new Apps around the wo
 **Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
 
 This app use Deployd as backend on appcorner.it and use DeploydKit library.
+
 The server side code will be relased soon.
 
 The story:
@@ -18,8 +19,12 @@ The story:
 - AppCorner social works!
 - The app not pass the approval rule 2.25 of App Store
 - I forgot the app for some time
+- I developed AppCornerKit as new project
 - Now the app is open source
 
 Have fun without tear down the server!
 
-![Alt text](preview/1.png "Preview songs") 
+![Alt text](preview/1.png "Preview") 
+
+Anyone who wants to contribute is welcome.
+
