@@ -1,0 +1,257 @@
+
+/*
+ Server side messagges
+ */
+"error.generic.auth"="Non sei autorizzato";
+
+"error.user.disabled"="La tua utenza è stata disabilitata. Contattaci sul nostro sito web";
+"error.user.notlogged"="Devi prima effettuare l'accesso";
+
+"error.activity.limit"="Hai raggiunto il limite di attvità (mi piace/commenti) giornaliere pubblicabili";
+"error.activity.fromUser"="É possibile salvare un attività solo per l'utente corrente";
+"error.activity.invalidFromUser"="Un attività deve avere un utente valido";
+"error.activity.unfollow.internalUser"="Non puoi smettere di seguire l'utente";
+
+"error.app.invalidUser"="Un App deve avere un utente valido";
+"error.app.limit.duplicate"="Hai già pubblicato questa app";
+"error.app.limit"="Hai raggiunto il limite giornaliero di app pubblicabili";
+"error.app.userAuth"="É possibile salvare un app solo per l'utente corrente";
+
+"error.apppurchase.limit"="Raggiunto il limite di app pubblicabili per la nazione selezionata, riprova domani.";
+"error.apppurchase.limit.duplicate"="L'App è già stata pubblicata in data odierna per la nazione selezionata, riprova domani.";
+
+/*
+ Client side messagges
+ */
+
+"button.generic.cancel"="Annulla";
+"button.generic.back"="Indietro";
+"button.generic.dismiss"="Annulla";
+"button.generic.retry"="Riprova";
+"button.generic.close"="Chiudi";
+
+"Connection failed"="Non è stato possibile connettersi al server, riprova tra qualche minuto.";
+
+"error.generic.warning"="Attenzione";
+"error.generic"="Ops, c'è un problema!";
+"error.connection.title"="Connessione ad Internet assente!";
+
+"message.action.like"="Ho provato l'App e mi piace";
+
+"message.badge.pricedrop" = "App in sconto! É il momento giusto per acquistarla.";
+"message.badge.playtogether" = "Voglio giocare/utilizzare questa app con i miei amici.";
+"message.badge.question" = "Ho una domanda sull'app.";
+"message.badge.want" = "Attendo un ribasso del prezzo.";
+
+
+"label.badges.own" = "La possiedo";
+"label.badges.want" = "La desidero";
+
+"tabbar.label.home"="Home";
+"tabbar.label.activity" = "Attività";
+
+"settings.sheet.title"="Impostazioni";
+"settings.sheet.profile"="Il mio profilo";
+"settings.sheet.findFriends"="Trova amici";
+"settings.sheet.logOut"="Chiudi sessione";
+
+"settings.sheet.appsPriceDrop"="App in sconto";
+"settings.sheet.promotion"="Abilita promozione App";
+"settings.sheet.saveAppPicker"= "Salva stato ricerca Apps";
+
+"settings.country.message"="Hai attivato la possibilità di pubblicare App tramite post sponsorizzati. Questa modalità è dedicata ai soli sviluppatori di App.";
+
+"findFriends.button.invite"="Invita i tuoi amici";
+"findFriends.button.unfollowAll"="Non seguire";
+"findFriends.button.followAll"="Segui tutti";
+
+"findFriends.button.follow"="Segui  ";
+"findFriends.button.following"="Seguito";
+
+"findFriends.sheet.invite"="Invita con:";
+"findFriends.sheet.email"="Email";
+"findFriends.sheet.iMessage"="iMessage";
+
+"findFriends.mail.subject"="Sono su AppCorner, prova l'app anche tu.";
+"findFriends.mail.text"="Condividi le tue App preferite su <a href=\"http://itunes.com/apps/appcorner\">AppCorner</a> e scopri nuove straordinarie App da tutto il mondo con i tuoi amici.";
+"findFriends.mail.body"="Installa AppCorner! http://itunes.com/apps/appcorner";
+"findFriends.fb.picker.title"="Invita i tuoi amici";
+
+"detail.placeholder.addComment"="Scrivi un commento";
+"detail.button.delete"="Elimina App";
+"detail.button.share"="Condividi";
+"detail.confirm.message"="Sei certo di voler eliminare questa app?";
+"detail.confirm.delete"="Si, elimina l'app";
+
+"publish.button.publish"="Pubblica";
+"publish.error.generic.title"="Non posso pubblicare l'app";
+"publish.sheet.publish"="Pubblica gratis";
+"publish.sheet.publish.sponsored"="Promuovi App";
+
+"appPicker.search.placeholder"="Nome App";
+"appPicker.noratings"="Nessun voto per la versione corrente";
+"appPicker.noratings.allversions"="Nessun voto per tutte le versioni";
+"appPicker.button.detail"="Pubblica";
+"appPicker.label.allVersions"="tutte le versioni";
+
+"appPicker.ranking.topfreeapplications"="Top Gratuite";
+"appPicker.ranking.toppaidapplications"="Top Acquistate";
+"appPicker.ranking.topgrossingapplications"="Top Redditizie";
+"appPicker.ranking.newapplications"="Nuove";
+"appPicker.ranking.newfreeapplications"="Nuove Gratuite";
+"appPicker.ranking.newpaidapplications"="Nuove Acquistate";
+
+"appPicker.genre.all"="Tutti i generi";
+"appPicker.genre.6018"="Libri";
+"appPicker.genre.6000"="Economia";
+"appPicker.genre.6022"="Cataloghi";
+"appPicker.genre.6017"="Istruzione";
+"appPicker.genre.6016"="Intrattenimento";
+"appPicker.genre.6015"="Finanza";
+"appPicker.genre.6023"="Cibo e Bevande";
+"appPicker.genre.6014"="Giochi";
+"appPicker.genre.6013"="Salute e Benessere";
+"appPicker.genre.6012"="Mode e Tendenze";
+"appPicker.genre.6020"="Medicina";
+"appPicker.genre.6011"="Musica";
+"appPicker.genre.6010"="Navigazione";
+"appPicker.genre.6009"="Notizie";
+"appPicker.genre.6021"="Edicola";
+"appPicker.genre.6008"="Foto e Video";
+"appPicker.genre.6007"="Produttività";
+"appPicker.genre.6006"="Riferimento";
+"appPicker.genre.6005"="Social Network";
+"appPicker.genre.6004"="Sport";
+"appPicker.genre.6003"="Viaggi";
+"appPicker.genre.6002"="Utilità";
+"appPicker.genre.6001"="Previsioni del tempo";
+
+
+"appJumpBar.title.home"="Le App pubblicate di recente";
+"appJumpBar.title.account"="Le App recenti di %@";
+"appJumpBar.title.account.me"="Le mie App pubblicate di recente";
+"appJumpBar.noapps.label"="Nessuna App pubblicata";
+
+"home.blank.message"="Non hai ancora alcun amico facebook su AppCorner.";
+"home.blank.button.title"="Invita i tuoi amici";
+"home.app.notification"="%d nuova app dai tuoi amici";
+"home.app.notifications"="%d nuove app dai tuoi amici";
+
+"activity.message.like"="piace la tua app";
+"activity.message.follow"="ha iniziato a seguirti";
+"activity.message.comment"="ha commentato la tua app";
+"activity.message.joined"="si è collegato in AppCorner";
+"activity.message.priceDrop"="app in sconto";
+"activity.priceDrop.from"="da";
+"activity.priceDrop.to"="a";
+"activity.priceDrop.free"="gratis";
+
+"activity.user.noname"="Qualcuno";
+"activity.blank.message"="Non hai alcuna attività da visualizzare.";
+"activity.blank.button.title"="Invita i tuoi amici";
+
+"account.button.follow"="Segui";
+"account.button.unfollow"="Non seguire";
+"account.label.nofollowers"="0 ti seguono";
+"account.label.nofollowing"="0 seguiti";
+"account.label.numfollower"="ti segu";
+"account.label.numfollowing"="seguiti";
+"account.label.numfollower.plural"="ono";
+"account.label.numfollower.singular"="e";
+"account.label.app.plural"="";
+"account.label.app.singular"="";
+
+"login.message.signup"="Condividi e scopri nuove straordinarie App da tutto il mondo con i tuoi amici.";
+"login.button.message"="Accedi con facebook";
+
+"login.message.site"="www.appcorner.it";
+
+"viewer.button.close"="Chiudi";
+
+//TTTTimeIntervalFormatter
+"ago"= "fa";
+"just now"="proprio ora";
+"from now"="da ora";
+"about %@"="circa %@";
+"year"="anno";
+"years"="anni";
+"month"="mese";
+"months"="mesi";
+"week"="settimana";
+"weeks"="settimane";
+"day"="giorno";
+"days"="giorni";
+"hour"="ora";
+"hours"="ore";
+"minute"="minuto";
+"minutes"="minuti";
+"second"="secondo";
+"seconds"="secondi";
+
+//AppStore
+"Books"="Libri";
+"Business"="Economia";
+"Catalogs"="Cataloghi";
+"Education"="Istruzione";
+"Entertainment"="Intrattenimento";
+"Finance"="Finanza";
+"Food & Drink"="Cibo e Bevande";
+"Games"="Giochi";
+"Health & Fitness"="Salute e Benessere";
+"Lifestyle"="Mode e Tendenze";
+"Medical"="Medicina";
+"Music"="Musica";
+"Navigation"="Navigazione";
+"News"="Notizie";
+"Newsstand"="Edicola";
+"Photo & Video"="Foto e Video";
+"Productivity"="Produttività";
+"Reference"="Riferimento";
+"Social Networking"="Social Network";
+"Sports"="Sport";
+"Travel"="Viaggi";
+"Utilities"="Utilità";
+"Weather"="Previsioni del tempo";
+
+"FREE"="GRATIS";
+
+
+"purchase.waning.appstorecountry"="La nazione selezionata non coincide con quella dell'App Store dell'utente che stai usando, se procedi alla pubblicazione non vedrai l'app pubblicata sulla tua home.";
+"purchase.warning.nocountry"="Nessun altra nazione disponibile, ulteriori nazioni saranno aggiunte in futuro";
+"purchase.error.pending"="Non puoi procedere all'acquisto perchè esiste una transazione non conclusa. Riprova più tardi o contattaci su infoappcorner@gmail.com";
+"purchase.error.blocked"="Acquisto non disponibile, riprova più tardi.";
+"purchase.error.appNotInCountry"="App non disponibile nella nazione selezionata";
+
+"purchase.label.description"="Promuovi la tua App ora!";
+"purchase.label.country"="Seleziona la nazione dell'App Store:";
+"purchase.button.buy"="Acquista ora";
+"purchase.button.buyfor"="Acquista ora per soli";
+"purchase.label.noproduct"="Nessun prodotto caricato";
+
+"badges.warning.appNotInCountry"="Non puoi pubblicare questa App perchè non è disponibile nella tua nazione dell'App Store";
+"badges.question.error.commentMissing"="Inserisci nel campo commento la tua domanda";
+
+
+"sync.error.countrymissing"="AppCorner richiede un account valido per l'App Store al fine di identificare la nazione per cui pubblicare le app in AppCorner. Accedi alle impostazioni dell'App Store ed esegui il login con il tuo ID Apple.";
+"sync.error.update"="Aggiorna AppCorner alla nuova versione, scaricabile gratuitamente dall' App Store, per proseguire.";
+"sync.error.countrynotfound"="Nazione non trovata.";
+
+"invite.sheet.facebook" = "Invita su facebook";
+"invite.sheet.post.facebook" = "Messaggio su facebook";
+"invite.sheet.contacts" = "Invita dalla rubrica";
+"fb.invite.message" = "Installa AppCorner per iPhone e condividi con me le app che preferisci. http://itunes.com/apps/appcorner";
+"fb.post.message" = "Sto condividendo le mie App preferite su AppCorner."; 
+
+"fb.permission.error.title" = "Errore autorizzazioni";
+"fb.permission.error.message"="Non è stato possibile richiedere le autorizzazioni";
+
+"share.post.message"="Condiviso con AppCorner";
+"share.gift.activity"="Regala";
+
+"logout.confirm.message"= "Confermi la chiusura della sessione utente?";
+"hud.following.friends"="Ricerca amici";
+"hud.create.profile"="Creazione profilo";
+"pricedropapppicker.blank.message"="Nessuna App in sconto.";
+"apppicker.blank.message"="Nessuna App trovata.";
+
+"becomeActive.updateMessage"="Tocca il logo di AppCorner per aggiornare.";

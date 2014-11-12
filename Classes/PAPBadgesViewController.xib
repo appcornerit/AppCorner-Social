@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PAPBadgesViewController">
+            <connections>
+                <outlet property="badgesViewBackground" destination="CeG-Gh-p5O" id="2jT-8f-GKm"/>
+                <outlet property="labelIOwn" destination="cgB-jl-nWF" id="K6l-1e-9Ei"/>
+                <outlet property="labelIWant" destination="M4u-kw-Q6T" id="dhi-yy-c2Y"/>
+                <outlet property="labelsViewBackgorund" destination="JrS-YL-F1I" id="QSt-PC-phn"/>
+                <outlet property="labelsViewContainer" destination="Ba2-hL-khx" id="a7Q-Y4-DSa"/>
+                <outlet property="ownBadgesViewContainer" destination="hFg-Rf-7IJ" id="mXZ-L2-7zD"/>
+                <outlet property="playTogetherBadgeButton" destination="4Sk-Fb-w3f" id="6W5-2K-Fuw"/>
+                <outlet property="priceDropBadgeButton" destination="dT5-OE-Ok6" id="bzL-R4-APc"/>
+                <outlet property="questionBadgeButton" destination="Koj-Kc-Qmz" id="MyX-RC-vjf"/>
+                <outlet property="view" destination="1" id="TWD-7x-MQc"/>
+                <outlet property="wantBadgeButton" destination="wTn-Yv-a0P" id="bNd-Nm-Mj9"/>
+                <outlet property="wantBadgesViewContainer" destination="pGA-QG-3bc" id="2Q0-9p-FyV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="292" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.69999999999999973" contentMode="scaleToFill" id="CeG-Gh-p5O">
+                    <rect key="frame" x="0.0" y="28" width="292" height="52"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view alpha="0.69999999999999973" contentMode="scaleToFill" id="JrS-YL-F1I">
+                    <rect key="frame" x="0.0" y="0.0" width="292" height="28"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="Ba2-hL-khx">
+                    <rect key="frame" x="0.0" y="0.0" width="292" height="28"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Own" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cgB-jl-nWF">
+                            <rect key="frame" x="0.0" y="0.0" width="122" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Want" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M4u-kw-Q6T">
+                            <rect key="frame" x="169" y="0.0" width="122" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="hFg-Rf-7IJ">
+                    <rect key="frame" x="0.0" y="0.0" width="122" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dT5-OE-Ok6">
+                            <rect key="frame" x="0.0" y="28" width="52" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="home.badge.priceDrop.selected.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="priceDropAction:" destination="-1" eventType="touchUpInside" id="4hr-jx-B2Q"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Sk-Fb-w3f">
+                            <rect key="frame" x="70" y="28" width="52" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="home.badge.playTogether.selected.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="playTogetherAction:" destination="-1" eventType="touchUpInside" id="ZLu-eW-PuG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="pGA-QG-3bc">
+                    <rect key="frame" x="170" y="0.0" width="122" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Koj-Kc-Qmz">
+                            <rect key="frame" x="0.0" y="28" width="52" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="home.badge.question.selected.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="questionAction:" destination="-1" eventType="touchUpInside" id="uk3-Fi-9Th"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wTn-Yv-a0P">
+                            <rect key="frame" x="70" y="28" width="52" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="home.badge.wait.selected.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="wantAction:" destination="-1" eventType="touchUpInside" id="tsb-oV-s9A"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home.badge.playTogether.selected.png" width="50" height="50"/>
+        <image name="home.badge.priceDrop.selected.png" width="50" height="50"/>
+        <image name="home.badge.question.selected.png" width="50" height="50"/>
+        <image name="home.badge.wait.selected.png" width="50" height="50"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

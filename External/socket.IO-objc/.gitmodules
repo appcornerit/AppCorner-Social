@@ -1,0 +1,6 @@
+[submodule "submodules/json-framework"]
+	path = submodules/json-framework
+	url = https://github.com/stig/json-framework.git
+[submodule "submodules/socket-rocket"]
+	path = submodules/socket-rocket
+	url = https://github.com/square/SocketRocket.git

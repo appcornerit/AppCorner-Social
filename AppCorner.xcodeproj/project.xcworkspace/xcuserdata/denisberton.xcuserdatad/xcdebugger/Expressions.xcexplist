@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[DAAppsViewController numberOfItemsForMenu:]:DAAppsViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate presentLoginViewControllerAnimated:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.welcomeViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[SyncManager sync]:SyncManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[NSBundle mainBundle] infoDictionary][@&quot;CFBundleVersion&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__53-[PAPAppDetailsViewController textFieldShouldReturn:]_block_invoke:PAPAppDetailsViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate application:didReceiveRemoteNotification:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "userInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPEditAppViewController doneButtonAction:]:PAPEditAppViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.app.price">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__35-[PAPTabBarController appSelected:]_block_invoke:PAPTabBarController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPBadgesViewController highlightLabels]:PAPBadgesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.selectedBadges">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GLIRViewController render:]:GLIRViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PFQuery findAllWithOrSubqueries:]:PFQuery.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.orSubqueries.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[PFInstallation currentInstallation]:PFInstallation.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppFooterView setApp:]:PAPAppFooterView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__65-[MHFacebookImageViewerCell setImageURL:defaultImage:imageIndex:]_block_invoke28:MHFacebookImageViewer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "image.size">
+            </PersistentString>
+            <PersistentString
+               value = "imageURL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__61-[PAPMenuTableViewController togglePanelWithCompletionBlock:]_block_invoke:PAPMenuTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.openFrame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DKEntity sendAction:error:]:DKEntity.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate socketIO:didReceiveEvent:]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "__65-[PAPAppTimelineViewController tableView:viewForHeaderInSection:]_block_invoke175:PAPAppTimelineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[[PAPCache sharedCache] likeCountForApp:app] description]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPMenuTableViewController viewDidLoad]:PAPMenuTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.backgroundAreaDismissRect">
+            </PersistentString>
+            <PersistentString
+               value = "self.backgroundView ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[PAPErrorHandler handleError:titleKey:]:PAPErrorHandler.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[error description];">
+            </PersistentString>
+            <PersistentString
+               value = "errorKey">
+            </PersistentString>
+            <PersistentString
+               value = "lastError">
+            </PersistentString>
+            <PersistentString
+               value = "error">
+            </PersistentString>
+            <PersistentString
+               value = "[NSDate date]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__63-[PFQueryTableViewController appendNextPageWithFinishCallback:]_block_invoke:PFQueryTableViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__44-[PAApp fetchIfNeededInBackgroundWithBlock:]_block_invoke:PAApp.m">
+      </ContextState>
+      <ContextState
+         contextName = "__48+[PAPInAppPurchases verifyAndSendReceipt:queue:]_block_invoke70:PAPInAppPurchases.m">
+      </ContextState>
+      <ContextState
+         contextName = "__44+[AFURLConnectionOperation pinnedPublicKeys]_block_invoke:AFURLConnectionOperation.m">
+      </ContextState>
+      <ContextState
+         contextName = "__44-[PAAppStoreQuery loadApps:completionBlock:]_block_invoke:PAAppStoreQuery.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate socketIODidDisconnect:disconnectedWithError:]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PFQueryTableViewController tableViewCellIsNextPageCellAtIndexPath:]:PFQueryTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects.count">
+            </PersistentString>
+            <PersistentString
+               value = "self.hasMore">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PFObject removeObjectForKey:]:PFObject.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self objectForKey:key]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__67-[PAPActivityFeedViewController tableView:didSelectRowAtIndexPath:]_block_invoke:PAPActivityFeedViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppCell setApp:]:PAPAppCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DAAppsViewController horizMenu:itemSelectedAtIndex:]:DAAppsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.menuGenre.selectedIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate isParseReachable]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "__80-[PFQueryTableViewController processQueryResults:removedObjects:error:callback:]_block_invoke_2:PFQueryTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DKEntity setObject:forKey:]:DKEntity.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "transaction.transactionReceipt">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__35-[DAAppsViewController loadRssFeed]_block_invoke_2:DAAppsViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppTimelineViewController scrollViewDidScroll:]:PAPAppTimelineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "scrollView.contentOffset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BLRView blurBackground]:BLRView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.parent">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__61-[PFQueryTableViewController loadNextPageWithFinishCallback:]_block_invoke:PFQueryTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects.count">
+            </PersistentString>
+            <PersistentString
+               value = "self.autoScrollLoad">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPEditAppViewController badgesUpdated]:PAPEditAppViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.app.inCountryAppStore">
+            </PersistentString>
+            <PersistentString
+               value = "self.app">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DKRequest sendRequestWithData:method:entity:error:]:DKRequest.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "bodyData">
+            </PersistentString>
+            <PersistentString
+               value = "req.HTTPMethod">
+            </PersistentString>
+            <PersistentString
+               value = "req">
+            </PersistentString>
+            <PersistentString
+               value = "req.HTTPBody">
+            </PersistentString>
+            <PersistentString
+               value = "[[NSString alloc] initWithData:result encoding:NSUTF8StringEncoding].length">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__41-[PAPAppDetailsViewController loadLikers]_block_invoke:PAPAppDetailsViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppTimelineViewController numberImagesForImageViewer:]:PAPAppTimelineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.selectedApp">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAAppStoreQuery parseApp:withApp:]:PAAppStoreQuery.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PFQueryTableViewController processQueryResults:error:callback:]:PFQueryTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppDetailsViewController queryForTable]:PAPAppDetailsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__40+[PAPUtility likeAppInBackground:block:]_block_invoke_3:PAPUtility.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DKQuery find:one:count:]:DKQuery.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.entityName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPFindFriendsViewController inviteFacebookFriends:]:PAPFindFriendsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSLocalizedString(@&quot;fb.invite.message&quot;,nil)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPActivityCell setActivity:]:PAPActivityCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "__37-[PAApp existsInUserCountryAppStore:]_block_invoke:PAApp.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPPriceDropAppPickerViewController queryForTable]:PAPPriceDropAppPickerViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "query">
+            </PersistentString>
+            <PersistentString
+               value = "self.parseClassName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPProductPickerViewController valueSelectedAtIndex:forType:]:PAPProductPickerViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.countryItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate logOut]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[PAPCache sharedCache]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PFObject objectForKey:]:PFObject.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PFQueryTableViewController initWithStyle:entityName:]:PFQueryTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "entityName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPProductPickerViewController viewDidLoad]:PAPProductPickerViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.countryItems">
+            </PersistentString>
+            <PersistentString
+               value = "self.countryValues">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MBProgressHUD updateIndicators]:MBProgressHUD.m">
+      </ContextState>
+      <ContextState
+         contextName = "__48+[PAPInAppPurchases markErrorForPendingReceipt:]_block_invoke:PAPInAppPurchases.m">
+      </ContextState>
+      <ContextState
+         contextName = "__70-[PAPAppTimelineViewController appHeaderView:didTapLikeAppButton:app:]_block_invoke:PAPAppTimelineViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PFQueryTableViewController tableView:numberOfRowsInSection:]:PFQueryTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects">
+            </PersistentString>
+            <PersistentString
+               value = "self.hasMore">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DAAppsViewController viewDidLoad]:DAAppsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.panelRanking.tableView.rowHeight">
+            </PersistentString>
+            <PersistentString
+               value = "self.placeholderGenre">
+            </PersistentString>
+            <PersistentString
+               value = "self.countryItems.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__44-[PFQuery findObjectsInBackgroundWithBlock:]_block_invoke:PFQuery.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAApp setDkEntity:]:PAApp.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.appId">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[NSURLConnection(Timeout) sendSynchronousRequest:returningResponse:timeout:error:]:NSURLConnection+Timeout.m">
+      </ContextState>
+      <ContextState
+         contextName = "__39-[AppDelegate loadInAppPurchaseHandler]_block_invoke_2:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "__63-[PFQueryTableViewController appendNextPageWithFinishCallback:]_block_invoke_2:PFQueryTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "apps">
+            </PersistentString>
+            <PersistentString
+               value = "appResults">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[PAPUtility priceDropToString:withActivityString:]:PAPUtility.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "price">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[POHorizontalList setItems:]:POHorizontalList.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppTimelineViewController tableView:cellForRowAtIndexPath:object:]:PAPAppTimelineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects.count">
+            </PersistentString>
+            <PersistentString
+               value = "self.paginationEnabled">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+            <PersistentString
+               value = "self.autoScrollLoad">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate handleActionURL:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[url fragment]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPMenuTableViewController setBackgroundAreaDismissRect:]:PAPMenuTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.backgroundView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPBadgesViewController setEditMode:]:PAPBadgesViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAAppStoreQuery parseDictionary:withApps:]:PAAppStoreQuery.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[RSSParser parser:didEndElement:namespaceURI:qualifiedName:]:RSSParser.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentApp">
+            </PersistentString>
+            <PersistentString
+               value = "parser">
+            </PersistentString>
+            <PersistentString
+               value = "parser.attributeDict">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPPriceDropAppPickerViewController objectsWillLoad]:PAPPriceDropAppPickerViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAAppStoreQuery loadApps:completionBlock:]:PAAppStoreQuery.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "apps">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DKRequest sendSynchronousRequest:returningResponse:error:]:DKRequest.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppTimelineViewController numberOfSectionsInTableView:]:PAPAppTimelineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.hasMore">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate facebookRequestDidLoad:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DAAppViewCell setAppObject:]:DAAppViewCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.nameLabel">
+            </PersistentString>
+            <PersistentString
+               value = "appObject">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:main.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.app.price">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PFQueryTableViewController tableView:cellForRowAtIndexPath:]:PFQueryTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects.count">
+            </PersistentString>
+            <PersistentString
+               value = "self.paginationEnabled">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath">
+            </PersistentString>
+            <PersistentString
+               value = "self.autoScrollLoad">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PFLogInViewController loginUser:displayName:email:]:PFLogInViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "c">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPHomeViewController settingsButtonAction:]:PAPHomeViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[PAPInAppPurchases markErrorForPendingReceipt:]:PAPInAppPurchases.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "transaction">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MKHorizMenu reloadData]:MKHorizMenu.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.backgroundColor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__39-[AppDelegate loadInAppPurchaseHandler]_block_invoke:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPMenuTableViewController togglePanel]:PAPMenuTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPEditAppViewController loadView]:PAPEditAppViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppTimelineViewController viewDidAppear:]:PAPAppTimelineViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DAAppViewCell purchaseButton:]:DAAppViewCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableView.superview">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__90-[PAPPriceDropAppPickerViewController tableView:accessoryButtonTappedForRowWithIndexPath:]_block_invoke:PAPPriceDropAppPickerViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "newApp">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppTimelineViewController viewDidLoad]:PAPAppTimelineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.appsJumpBar">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PFQueryTableViewController processQueryResults:removedObjects:error:callback:]:PFQueryTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.hasMore">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__54+[PAPInAppPurchases markErrorForPendingReceipt:queue:]_block_invoke:PAPInAppPurchases.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "objects">
+            </PersistentString>
+            <PersistentString
+               value = "transaction.transactionIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppDetailsHeaderView createView]:PAPAppDetailsHeaderView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__57-[AppDelegate application:didFinishLaunchingWithOptions:]_block_invoke:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SocketIO connectToHost:onPort:withParams:withNamespace:withConnectionTimeout:]:SocketIO.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "protocol">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPTabBarController tabBar:didSelectItem:]:PAPTabBarController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tabBarController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PFLogInViewController sessionStateChanged:state:error:]:PFLogInViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPBadgesViewController setupWithSelectedApp:]:PAPBadgesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.selectedBadges &amp; PAPBagdePriceDrop">
+            </PersistentString>
+            <PersistentString
+               value = "self.selectedBadges">
+            </PersistentString>
+            <PersistentString
+               value = "self.questionBadgeButton.selected">
+            </PersistentString>
+            <PersistentString
+               value = "self.priceDropBadgeButton">
+            </PersistentString>
+            <PersistentString
+               value = "self.app">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SocketIOTransportWebsocket webSocket:didCloseWithCode:reason:wasClean:]:SocketIOTransportWebsocket.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPActivityFeedViewController objectsDidLoad:]:PAPActivityFeedViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects.count">
+            </PersistentString>
+            <PersistentString
+               value = "[activity createdAt]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppCell numberImagesForImageViewer:]:PAPAppCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "__83+[NSURLConnection(Timeout) sendSynchronousRequest:returningResponse:timeout:error:]_block_invoke11:NSURLConnection+Timeout.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPActivityFeedViewController tableView:didSelectRowAtIndexPath:]:PAPActivityFeedViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__36-[PFLogInViewController getUserInfo]_block_invoke:PFLogInViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "error">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppTimelineViewController appFooterView:didTapAppButton:app:]:PAPAppTimelineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[app objectId]">
+            </PersistentString>
+            <PersistentString
+               value = "[[PFUser currentUser] objectId]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[DKRequest parseResponse:withData:error:isCached:]:DKRequest.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppDetailsViewController tableView:heightForRowAtIndexPath:]:PAPAppDetailsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "h">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[POHorizontalList initWithCoder:]:POHorizontalList.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PFFile isDataAvailable]:PFFile.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "fileImageView.image">
+            </PersistentString>
+            <PersistentString
+               value = "self.url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPBadgesViewController updateBadgesInApp]:PAPBadgesViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPAppTimelineViewController tableView:viewForHeaderInSection:]:PAPAppTimelineViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPFindFriendsViewController objectsDidLoad:]:PAPFindFriendsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[POHorizontalList setupView]:POHorizontalList.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.openButton.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PAPActivityFeedViewController tableView:heightForRowAtIndexPath:]:PAPActivityFeedViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "prices[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RSSParser parser:didStartElement:namespaceURI:qualifiedName:attributes:]:RSSParser.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate socketIO:onError:]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAApp objectForKey:]:PAApp.m">
+      </ContextState>
+      <ContextState
+         contextName = "__35-[DAAppsViewController loadRssFeed]_block_invoke:DAAppsViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__56-[PAAppStoreQuery loadApps:withCountry:completionBlock:]_block_invoke:PAAppStoreQuery.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PAAppStoreQuery parseApp:withApp:countryCode:]:PAAppStoreQuery.m">
+      </ContextState>
+      <ContextState
+         contextName = "__71-[PAPAppTimelineViewController tableView:cellForRowAtIndexPath:object:]_block_invoke:PAPAppTimelineViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objects.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__48-[AppDelegate logInViewController:didLogInUser:]_block_invoke:AppDelegate.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

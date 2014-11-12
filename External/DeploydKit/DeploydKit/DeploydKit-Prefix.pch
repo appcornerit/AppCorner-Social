@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'DeploydKit' target in the 'DeploydKit' project
+//
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+// Categories
+#import "NSError+DeploydKit.h"
+#import "NSURLConnection+Timeout.h"
+
+#endif

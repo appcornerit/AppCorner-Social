@@ -1,0 +1,205 @@
+
+/*
+ Server side messagges
+ */
+"error.generic.auth"="You are not authorized to do that";
+
+"error.user.disabled"="Your account has been disabled. Please contact us on our website";
+"error.user.notlogged"="You must be logged in";
+
+"error.activity.limit"="You have reached your daily activities (love/comments) published limit";
+"error.activity.fromUser"="Cannot set fromUser on Activity to a user other than the current user";
+"error.activity.invalidFromUser"="An Activity should have a valid fromUser";
+"error.activity.unfollow.internalUser"="Cannot unfollow this user";
+
+"error.app.invalidUser"="A App should have a valid user";
+"error.app.limit.duplicate"="Your have already published this app";
+"error.app.limit"="You have reached your daily apps published limit";
+"error.app.userAuth"="Cannot set user on App to a user other than the current user";
+
+"error.apppurchase.limit"="Daily promoted apps limit reached for the select country, please, retry tommorow";
+"error.apppurchase.limit.duplicate"="App already published today for the select country, please, retry tommorow";
+/*
+Client side messagges
+ */
+
+"button.generic.cancel"="Cancel";
+"button.generic.back"="Back";
+"button.generic.dismiss"="Dismiss";
+"button.generic.retry"="Retry";
+"button.generic.close"="Close";
+
+"Connection failed"="Connection to the server failed, try again in a few minutes."; //deploydkit error
+
+"error.generic.warning"="Warning";
+"error.generic"="Oops, there was an error!";
+"error.connection.title"="No internet connection!";
+
+"message.action.like"="I use this App and I love it";
+
+"message.badge.pricedrop" = "Price drop! It's the right time to buy.";
+"message.badge.playtogether" = "I want play/use this app with my friends.";
+"message.badge.question" = "I have a question about this app.";
+"message.badge.want" = "I waiting for a price drop.";
+
+
+"label.badges.own" = "I Own";
+"label.badges.want" = "I Wish";
+
+"tabbar.label.home"="Home";
+"tabbar.label.activity" = "Activity";
+
+"settings.sheet.title"="Settings";
+"settings.sheet.profile"="My profile";
+"settings.sheet.findFriends"="Find friends";
+"settings.sheet.logOut"="Log out";
+
+"settings.sheet.appsPriceDrop"="Apps price drops";
+"settings.sheet.promotion"="Enable App promotion";
+"settings.sheet.saveAppPicker"= "Save state search Apps";
+
+"settings.country.message"="You have enabled the ability to publish App via sponsored posts. This mode is dedicated only for App developers.";
+
+"findFriends.button.invite"="Invite friends";
+"findFriends.button.unfollowAll"="Unfollow All";
+"findFriends.button.followAll"="Follow All";
+
+"findFriends.button.follow"="Follow  ";
+"findFriends.button.following"="Following";
+
+"findFriends.sheet.invite"="Invite with:";
+"findFriends.sheet.email"="Email";
+"findFriends.sheet.iMessage"="iMessage";
+
+"findFriends.mail.subject"="Join me on AppCorner";
+"findFriends.mail.text"="Share your preferred apps on <a href=\"http://http://itunes.com/apps/appcorner\">AppCorner</a> and discorver great new Apps around the world with your friends.";
+"findFriends.mail.body"="Check out AppCorner! http://itunes.com/apps/appcorner"; //replace with https://itunes.apple.com/us/app/keynote/id361285480?mt=8
+
+"findFriends.fb.picker.title"="Invite friends";
+
+"detail.placeholder.addComment"="Add a comment";
+"detail.button.delete"="Delete App";
+"detail.button.share"="Share";
+"detail.confirm.message"="Are you sure you want to delete this app?";
+"detail.confirm.delete"="Yes, delete app";
+
+"publish.button.publish"="Publish";
+"publish.error.generic.title"="Couldn't post your app";
+"publish.sheet.publish"="Free publish";
+"publish.sheet.publish.sponsored"="Promote App";
+
+"appPicker.search.placeholder"="App name";
+"appPicker.noratings"="No ratings for current version";
+"appPicker.noratings.allversions"="No ratings for all versions";
+
+"appPicker.button.detail"="Publish";
+"appPicker.label.allVersions"="all versions";
+
+"appPicker.ranking.topfreeapplications"="Top Free Apps";
+"appPicker.ranking.toppaidapplications"="Top Paid Apps";
+"appPicker.ranking.topgrossingapplications"="Top Grossing Apps";
+"appPicker.ranking.newapplications"="New Apps";
+"appPicker.ranking.newfreeapplications"="New Free Applications";
+"appPicker.ranking.newpaidapplications"="New Paid Applications";
+
+"appPicker.genre.all"="All Genres";
+"appPicker.genre.6018"="Books";
+"appPicker.genre.6000"="Business";
+"appPicker.genre.6022"="Catalogs";
+"appPicker.genre.6017"="Education";
+"appPicker.genre.6016"="Entertainment";
+"appPicker.genre.6015"="Finance";
+"appPicker.genre.6023"="Food & Drink";
+"appPicker.genre.6014"="Games";
+"appPicker.genre.6013"="Health & Fitness";
+"appPicker.genre.6012"="Lifestyle";
+"appPicker.genre.6020"="Medical";
+"appPicker.genre.6011"="Music";
+"appPicker.genre.6010"="Navigation";
+"appPicker.genre.6009"="News";
+"appPicker.genre.6021"="Newsstand";
+"appPicker.genre.6008"="Photo & Video";
+"appPicker.genre.6007"="Productivity";
+"appPicker.genre.6006"="Reference";
+"appPicker.genre.6005"="Social Networking";
+"appPicker.genre.6004"="Sports";
+"appPicker.genre.6003"="Travel";
+"appPicker.genre.6002"="Utilities";
+"appPicker.genre.6001"="Weather";
+
+"appJumpBar.title.home"="The latest published Apps";
+"appJumpBar.title.account"="The latest Apps of %@";
+"appJumpBar.title.account.me"="My latest Apps";
+"appJumpBar.noapps.label"="No published apps";
+
+"home.blank.message"="You don't have any facebook friends on AppCorner yet.";
+"home.blank.button.title"="Invite friends";
+"home.app.notification"="%d new app from your friends";
+"home.app.notifications"="%d new apps from your friends";
+
+"activity.message.like"="liked your app";
+"activity.message.follow"="started following you";
+"activity.message.comment"="commented on your app";
+"activity.message.joined"="joined AppCorner";
+"activity.message.priceDrop"="app discount";
+"activity.priceDrop.from"="from";
+"activity.priceDrop.to"="to";
+"activity.priceDrop.free"="free";
+
+"activity.user.noname"="Someone";
+"activity.blank.message"="Your activity timeline is currently empty.";
+"activity.blank.button.title"="Invite friends";
+
+"account.button.follow"="Follow";
+"account.button.unfollow"="Unfollow";
+"account.label.nofollowers"="0 followers";
+"account.label.nofollowing"="0 following";
+"account.label.numfollower"="follower";
+"account.label.numfollowing"="following";
+"account.label.numfollower.plural"="s";
+"account.label.numfollower.singular"="";
+"account.label.app.plural"="s";
+"account.label.app.singular"="";
+
+"login.message.signup"="Sign up and start sharing and discorvering great new Apps around the world with your friends.";
+"login.button.message"="Login with facebook";
+"login.message.site"="www.appcorner.it";
+
+"viewer.button.close"="Close";
+
+"purchase.waning.appstorecountry"="The selected country does not coincide with the App Store's user that you are using, if you proceed to publish you will not see the published app on your home.";
+"purchase.warning.nocountry"="No other country available, more countries will be added in the future";
+"purchase.error.pending"="You can not proceed with the purchase because there is a pending transaction. Please try again later or contact us on infoappcorner@gmail.com";
+"purchase.error.blocked"="In-App Purchase unavailable, please try again later.";
+"purchase.error.appNotInCountry"="App not available in the selected country";
+"purchase.label.description"="Promote your App now!";
+"purchase.label.country"="Select the App Store country:";
+"purchase.button.buy"="Buy now";
+"purchase.button.buyfor"="Buy now for only";
+"purchase.label.noproduct"="No product loaded";
+
+"badges.warning.appNotInCountry"="You can not publish this App because it is not available in your App Store country";
+"badges.question.error.commentMissing"="Enter in the comments field your question";
+
+"sync.error.countrymissing"="AppCorner requires a valid account for the App Store in order to identify the country to publish apps in AppCorner. Access to the app store settings and log in with your Apple ID.";
+"sync.error.update"="New version is required! You must update your app from App Store before continue.";
+"sync.error.countrynotfound"="Country not found.";
+
+"invite.sheet.facebook" = "Invite from facebook";
+"invite.sheet.post.facebook" = "Post on facebook";
+"invite.sheet.contacts" = "Invite from Contacts";
+"fb.invite.message" = "Join me on AppCorner for iPhone, and share your preferred apps with me. http://itunes.com/apps/appcorner";
+"fb.post.message" = "I'm sharing my preferred Apps on AppCorner."; 
+"fb.permission.error.title" = "Permission Error";
+"fb.permission.error.message"="Unable to request publish permissions";
+
+"share.post.message"="Shared with AppCorner";
+"share.gift.activity"="Gift";
+
+"logout.confirm.message"= "Confirm log out?";
+"hud.following.friends"="Following friends";
+"hud.create.profile"="Creating profile";
+"pricedropapppicker.blank.message"="No Apps in discount.";
+"apppicker.blank.message"="No Apps found.";
+
+"becomeActive.updateMessage"="Tap the logo of AppCorner to update.";
