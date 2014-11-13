@@ -5,7 +5,7 @@ Share your favorites apps on AppCorner and discover great new apps around the wo
 
 **Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
 
-This app use [Deployd](http://deployd.com) as server on [appcorner.it](http://www.appcorner.it) and  [DeploydKit](https://github.com/appcornerit/DeploydKit) library.
+This app for iOS (iPhone only) use [Deployd](http://deployd.com) as server on [appcorner.it](http://www.appcorner.it) and  [DeploydKit](https://github.com/appcornerit/DeploydKit) library.
 
 The server side code will be relased soon.
 
