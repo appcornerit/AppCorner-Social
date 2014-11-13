@@ -1,7 +1,7 @@
 AppCorner Server
 ============
 
-AppCorner require facebook login, so replace or add code in your deployd to allow fblogin, the code is
+AppCorner require facebook login, so replace or add code in your deployd to allow fblogin, you find the code in 
 
 `deployd/lib/resources/user-collection.js`
 
