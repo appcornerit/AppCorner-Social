@@ -7,8 +7,6 @@ Share your favorites apps on AppCorner and discover great new apps around the wo
 
 This app for iOS (iPhone only) use [Deployd](http://deployd.com) as server on [appcorner.it](http://www.appcorner.it) and  [DeploydKit](https://github.com/appcornerit/DeploydKit) library.
 
-The server side code will be relased soon.
-
 The story:
 - I developed [DeploydKit](https://github.com/appcornerit/DeploydKit)
 - I saw [Anypic](https://github.com/ParsePlatform/Anypic) a full featured photo sharing app built on [Parse.com](https://parse.com)
@@ -23,6 +21,8 @@ The story:
 - Now the app is open source
 
 The app on appcorner.it could be used to share your apps, get opinions, suggestions, ideas or find collaborations of other iOS developers.
+
+Refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server.
 
 I encourage anyone who wants to contribute, build your server is quite simple so have fun without tear down the appcorner.it server.
 
