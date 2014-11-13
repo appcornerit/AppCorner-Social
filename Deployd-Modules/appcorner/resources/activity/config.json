@@ -1,0 +1,69 @@
+{
+	"type": "Collection",
+	"properties": {
+		"fromUser": {
+			"name": "fromUser",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "fromUser",
+			"order": 0
+		},
+		"toUser": {
+			"name": "toUser",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "toUser",
+			"order": 1
+		},
+		"type": {
+			"name": "type",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "type",
+			"order": 2
+		},
+		"content": {
+			"name": "content",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "content",
+			"order": 3
+		},
+		"appId": {
+			"name": "appId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "appId",
+			"order": 4
+		},
+		"createdAt": {
+			"name": "createdAt",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "createdAt",
+			"order": 5
+		},
+		"updatedAt": {
+			"name": "updatedAt",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "updatedAt",
+			"order": 6
+		},
+		"creatorId": {
+			"name": "creatorId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "creatorId",
+			"order": 7
+		}
+	}
+}

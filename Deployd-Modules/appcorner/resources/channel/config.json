@@ -1,0 +1,109 @@
+{
+	"type": "Collection",
+	"properties": {
+		"udid": {
+			"name": "udid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "udid",
+			"order": 0
+		},
+		"userChannel": {
+			"name": "userChannel",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "userChannel",
+			"order": 1
+		},
+		"appVersion": {
+			"name": "appVersion",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "appVersion",
+			"order": 2
+		},
+		"deviceToken": {
+			"name": "deviceToken",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "deviceToken",
+			"order": 3
+		},
+		"deviceSystem": {
+			"name": "deviceSystem",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "deviceSystem",
+			"order": 4
+		},
+		"deviceModel": {
+			"name": "deviceModel",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "deviceModel",
+			"order": 5
+		},
+		"badge": {
+			"name": "badge",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "badge",
+			"order": 6
+		},
+		"timeZone": {
+			"name": "timeZone",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "timeZone",
+			"order": 7
+		},
+		"locale": {
+			"name": "locale",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "locale",
+			"order": 8
+		},
+		"language": {
+			"name": "language",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "language",
+			"order": 9
+		},
+		"createdAt": {
+			"name": "createdAt",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "createdAt",
+			"order": 10
+		},
+		"updatedAt": {
+			"name": "updatedAt",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "updatedAt",
+			"order": 11
+		},
+		"creatorId": {
+			"name": "creatorId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "creatorId",
+			"order": 12
+		}
+	}
+}

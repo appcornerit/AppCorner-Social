@@ -1,0 +1,14 @@
+{
+	"type": "Apn",
+	"cert": "node-apn_cert_production.pem",
+	"certData": "",
+	"key": "node-apn_key_production.pem",
+	"keyData": "",
+	"passphrase": "",
+	"ca": "",
+	"gateway": "gateway.push.apple.com",
+	"port": 2195,
+	"enhanced": "true",
+	"errorCallback": "",
+	"cacheLength": 100
+}

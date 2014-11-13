@@ -26,9 +26,9 @@
 //ENVIROMENTS
 
 //LOCALHOST
-#define TEST_LOCAL_URL @"http://192.168.2.18:2404/"
-#define TEST_LOCAL_URI @"192.168.2.18"
-#define TEST_LOCAL_PORT 2404
+#define TEST_LOCAL_URL @"http://127.0.0.1:2403/"
+#define TEST_LOCAL_URI @"127.0.0.1"
+#define TEST_LOCAL_PORT 2403
 
 //SERVER (you should use https with pinned cer)
 #define PROD_SERVER_URL @"http://www.appcorner.it/"

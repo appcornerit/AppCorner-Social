@@ -1,0 +1,53 @@
+{
+	"type": "Collection",
+	"properties": {
+		"minAppVersion": {
+			"name": "minAppVersion",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "minAppVersion",
+			"order": 0
+		},
+		"defaultLocale": {
+			"name": "defaultLocale",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "defaultLocale",
+			"order": 1
+		},
+		"countryCheckProductId": {
+			"name": "countryCheckProductId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "countryCheckProductId",
+			"order": 2
+		},
+		"numAppsPicker": {
+			"name": "numAppsPicker",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "numAppsPicker",
+			"order": 3
+		},
+		"createdAt": {
+			"name": "createdAt",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "createdAt",
+			"order": 4
+		},
+		"updatedAt": {
+			"name": "updatedAt",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "updatedAt",
+			"order": 5
+		}
+	}
+}
