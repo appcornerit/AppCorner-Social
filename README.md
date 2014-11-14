@@ -24,7 +24,7 @@ The app on appcorner.it could be used to share your apps, get opinions, suggesti
 
 Refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server.
 
-I encourage anyone who wants to contribute, build your server is quite simple so have fun without tear down the appcorner.it server.
+I encourage anyone who wants to contribute, you can build your social app that share musics, books or TV series (from iTunes) with a few of changes. Build your server is quite simple so have fun without tear down the appcorner.it server.
 
 
 ![Alt text](preview/1.png "Preview") 
