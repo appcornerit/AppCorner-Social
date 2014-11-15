@@ -189,7 +189,7 @@ static TTTTimeIntervalFormatter *timeFormatter;
         PAPProfileImageView *profilePic = [[PAPProfileImageView alloc] initWithFrame:CGRectMake(likeProfileXBase + i * (likeProfileXSpace + likeProfileDim), likeProfileY, likeProfileDim, likeProfileDim)];
         [profilePic.profileButton addTarget:self action:@selector(didTapLikerButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         profilePic.profileButton.tag = i;
-        [profilePic setProfileID:(self.likeUsers)[i][kPAPUserFacebookIDKey]];
+        [profilePic setProfileID:[(self.likeUsers)[i] objectForKey:kPAPUserFacebookIDKey]];
         [likeBarView addSubview:profilePic];
         [currentLikeAvatars addObject:profilePic];
     }
