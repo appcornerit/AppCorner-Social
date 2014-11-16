@@ -25,20 +25,20 @@ Add one record in COUNTRY resource from dashboard for example:
 `country: us`
 
 
-In AppCorner for iOS uncomment
+To run AppCorner for iOS on localhost uncomment
 ```objc
 //#define SERVER_URL TEST_LOCAL_URL
 //#define SERVER_URI TEST_LOCAL_URI
 //#define SERVER_PORT TEST_LOCAL_PORT
 ```
-
 and comment
 ```objc
 #define SERVER_URL PROD_SERVER_URL
 #define SERVER_URI PROD_SERVER_URI
 #define SERVER_PORT PROD_SERVER_PORT
 ```
-My experience of using AWS servers
+
+To deploy AppCorner on a remote server, I share my experience using AWS servers.
 
 The fast and simple way to build a remote server for development/test/website as [appcorner.it](http://www.appcorner.it) is deploy a BITNAMI vm with MEAN stack.
 
