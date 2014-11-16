@@ -22,8 +22,7 @@ The story:
 
 The app on appcorner.it could be used to share your apps, get opinions, suggestions, ideas or find collaborations of other iOS developers.
 
-I encourage anyone who wants to contribute and update the project to modern iOS technologies.
-
+I encourage anyone who wants to contribute and update the project.
 You can build your social app that share musics, books or TV series (from iTunes) with few changes.
 
 Build your server is quite simple, so have fun without kill the appcorner.it server. Refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
