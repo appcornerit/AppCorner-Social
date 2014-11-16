@@ -34,5 +34,10 @@ and comment
 #define SERVER_URI PROD_SERVER_URI
 #define SERVER_PORT PROD_SERVER_PORT
 ```
+My experience of using AWS servers
 
-have fun!
+The fast and simple way to build a remote server for development/test/website as [appcorner.it](http://www.appcorner.it) is deploy a BITNAMI vm with MEAN stack.
+
+To build a production server with support to mobile app, I recommend to use a dedicated server for mongodb (with deployd installed to run console or batch script) and a frontend server using AWS Elastic Beanstalk with autoscaling and nginx (with https enable) and disable deployd dashboard.
+
+enjoy!
