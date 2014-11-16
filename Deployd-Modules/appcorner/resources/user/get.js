@@ -12,6 +12,4 @@ else if(!internal && me.id !== this.creatorId){
     hide('password');
     hide('email'); 
     hide('disabled');     
-    hide('externalTwit');
-    hide('affiliateToken');    
 }

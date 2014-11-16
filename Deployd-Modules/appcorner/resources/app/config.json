@@ -49,21 +49,13 @@
 			"id": "badges",
 			"order": 5
 		},
-		"checkPrice": {
-			"name": "checkPrice",
-			"type": "boolean",
-			"typeLabel": "boolean",
-			"required": false,
-			"id": "checkPrice",
-			"order": 6
-		},
 		"createdAt": {
 			"name": "createdAt",
 			"type": "number",
 			"typeLabel": "number",
 			"required": false,
 			"id": "createdAt",
-			"order": 7
+			"order": 6
 		},
 		"updatedAt": {
 			"name": "updatedAt",
@@ -71,7 +63,7 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "updatedAt",
-			"order": 8
+			"order": 7
 		},
 		"creatorId": {
 			"name": "creatorId",
@@ -79,7 +71,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "creatorId",
-			"order": 9
+			"order": 8
 		}
 	}
 }

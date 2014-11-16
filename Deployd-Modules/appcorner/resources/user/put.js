@@ -14,6 +14,4 @@ else{
     protect('createdAt'); 
     protect('disabled');  
     protect('internal');  
-    protect('externalTwit');
-    protect('affiliateToken');    
 }

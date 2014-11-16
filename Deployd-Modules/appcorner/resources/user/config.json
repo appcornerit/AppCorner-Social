@@ -25,21 +25,13 @@
 			"id": "facebookId",
 			"order": 2
 		},
-		"affiliateToken": {
-			"name": "affiliateToken",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "affiliateToken",
-			"order": 3
-		},
 		"appStoreCountry": {
 			"name": "appStoreCountry",
 			"type": "string",
 			"typeLabel": "string",
 			"required": false,
 			"id": "appStoreCountry",
-			"order": 4
+			"order": 3
 		},
 		"channel": {
 			"name": "channel",
@@ -47,7 +39,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "channel",
-			"order": 5
+			"order": 4
 		},
 		"userAlreadyAutoFollowedFacebookFriends": {
 			"name": "userAlreadyAutoFollowedFacebookFriends",
@@ -55,7 +47,7 @@
 			"typeLabel": "boolean",
 			"required": false,
 			"id": "userAlreadyAutoFollowedFacebookFriends",
-			"order": 6
+			"order": 5
 		},
 		"internal": {
 			"name": "internal",
@@ -63,7 +55,7 @@
 			"typeLabel": "boolean",
 			"required": false,
 			"id": "internal",
-			"order": 7
+			"order": 6
 		},
 		"disabled": {
 			"name": "disabled",
@@ -71,23 +63,7 @@
 			"typeLabel": "boolean",
 			"required": false,
 			"id": "disabled",
-			"order": 8
-		},
-		"externalTwit": {
-			"name": "externalTwit",
-			"type": "boolean",
-			"typeLabel": "boolean",
-			"required": false,
-			"id": "externalTwit",
-			"order": 9
-		},
-		"premium": {
-			"name": "premium",
-			"type": "boolean",
-			"typeLabel": "boolean",
-			"required": false,
-			"id": "premium",
-			"order": 10
+			"order": 7
 		},
 		"updatedAt": {
 			"name": "updatedAt",
@@ -95,7 +71,7 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "updatedAt",
-			"order": 11
+			"order": 8
 		},
 		"createdAt": {
 			"name": "createdAt",
@@ -103,7 +79,7 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "createdAt",
-			"order": 12
+			"order": 9
 		}
 	}
 }

@@ -13,17 +13,7 @@
 @implementation PAPiTunesCountry
 
 +(void)saveAppStoreCountryForCurrenUser:(PFBooleanResultBlock)callback
-{
-    NSArray *identifiers = nil;
-    if([Sync currentSync])
-    {
-        NSString* identifier = [[Sync currentSync] objectForKey:kPAPSyncCountryCheckProductId];
-        if(identifier)
-        {
-            identifiers = @[identifier];
-        }
-    }
-    
+{    
     PFUser* user = [PFUser currentUser];
     if(!user)
     {

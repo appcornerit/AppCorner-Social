@@ -26,10 +26,6 @@ else if(internal || me.id == this.fromUser){
         if(this.type === "c" || this.type === "l") //comment or like
         {
             var dayLimit = 50;
-            if(me.premium)
-            {
-                dayLimit = 200;
-            }
             var yesterday = new Date();    
             yesterday.setDate(yesterday.getDate() - 1);
             var yesterdayInt = parseInt((yesterday.getTime()) / 1000, 10);
@@ -48,10 +44,7 @@ else if(internal || me.id == this.fromUser){
                         dpd.apn.post({user:me,activity:this}, function(res, err) {
                             //if (err) cancel(err);
                         });                                                  
-                    }
-                    dpd.social.post({user:me,id:this.appId,comment:this.content}, function(res, err) {   
-                        //if (err) cancel(err);            
-                    });                      
+                    }             
                 }
             });         
         }           

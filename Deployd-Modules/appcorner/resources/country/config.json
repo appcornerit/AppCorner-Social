@@ -17,53 +17,13 @@
 			"id": "autoFollowFacebookIds",
 			"order": 1
 		},
-		"productIds": {
-			"name": "productIds",
-			"type": "array",
-			"typeLabel": "array",
-			"required": false,
-			"id": "productIds",
-			"order": 2
-		},
-		"affiliateLink": {
-			"name": "affiliateLink",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "affiliateLink",
-			"order": 3
-		},
-		"partnerID": {
-			"name": "partnerID",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "partnerID",
-			"order": 4
-		},
-		"affiliateToken": {
-			"name": "affiliateToken",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "affiliateToken",
-			"order": 5
-		},
-		"enableInAppPurchase": {
-			"name": "enableInAppPurchase",
-			"type": "boolean",
-			"typeLabel": "boolean",
-			"required": false,
-			"id": "enableInAppPurchase",
-			"order": 6
-		},
 		"createdAt": {
 			"name": "createdAt",
 			"type": "number",
 			"typeLabel": "number",
 			"required": false,
 			"id": "createdAt",
-			"order": 7
+			"order": 2
 		},
 		"updatedAt": {
 			"name": "updatedAt",
@@ -71,7 +31,7 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "updatedAt",
-			"order": 8
+			"order": 3
 		}
 	}
 }

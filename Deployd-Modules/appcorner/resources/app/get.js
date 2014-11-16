@@ -8,7 +8,3 @@ else if(!internal && me.disabled)
     error('errorKey', "error.user.disabled");            
     cancel('error.user.disabled');      
 }
-else if(!internal)
-{
-    hide('checkPrice');
-}

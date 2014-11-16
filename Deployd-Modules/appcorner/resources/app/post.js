@@ -22,15 +22,7 @@ else if(me.id == this.user || internal){
     protect('updatedAt');
     
     if(!internal)
-    {
-        this.checkPrice = this.badges >= 65; // && this.country === me.appStoreCountry;  
-        
-        if(this.checkPrice)
-        {
-            dpd.price.post({appId:this.appId,country:me.appStoreCountry,type:"a"}, function(res, err) {
-            });   
-        }        
-        
+    {              
         //check duplicates
         dpd.app.get({appId:this.appId,user:this.user}, function(res, err) {
             if (err) cancel(err);
@@ -40,19 +32,10 @@ else if(me.id == this.user || internal){
                 error('errorKey', "error.app.limit.duplicate");                  
                 cancel('error.app.limit.duplicate');           
             }
-           else if(this.badges <= 7 && res.length == 1 && res[0].checkPrice){           
-               dpd.app.put(res[0].id, {checkPrice:false}, function(res, err) {
-                    if (err) cancel(err);
-               });
-            }
         });   
     
         //check post limits for day
         var dayLimit = 10;
-        if(me.premium)
-        {
-            dayLimit = 50;
-        }        
         var yesterday = new Date();    
         yesterday.setDate(yesterday.getDate() - 1);
         var yesterdayInt = parseInt((yesterday.getTime()) / 1000, 10);

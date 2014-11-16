@@ -48,16 +48,11 @@ NSString *const kPAPSyncClassKey = @"sync";
 NSString *const kPAPSyncMinVersionKey = @"minAppVersion";
 NSString *const kPAPSyncDefaultLocaleKey = @"defaultLocale";
 NSString *const kPAPSyncNumAppsPickerKey = @"numAppsPicker";
-NSString *const kPAPSyncCountryCheckProductId = @"countryCheckProductId";
 
 #pragma mark - PFObject Country Class
 NSString *const kPAPCountryClassKey = @"country";
 NSString *const kPAPCountry = @"country";
-NSString *const kPAPCountryAffiliateLink  = @"affiliateLink";
-NSString *const kPAPCountryCampaignToken = @"campaignToken";
-NSString *const kPAPCountryAffiliateToken = @"affiliateToken";
 NSString *const kPAPCountryAutoFollowFacebookIds = @"autoFollowFacebookIds";
-NSString *const kPAPCountryProductIds = @"productIds";
 
 #pragma mark - Activity Class
 // Class key
@@ -76,7 +71,6 @@ NSString *const kPAPActivityTypeFollow     = @"f"; //follow
 NSString *const kPAPActivityTypeComment    = @"c"; //comment
 NSString *const kPAPActivityTypeJoined     = @"j"; //joined
 NSString *const kPAPActivityTypePriceDrop  = @"d"; //price drop
-NSString *const kPAPActivityTypePurchase   = @"p"; //purchase
 
 #pragma mark - User Class
 // Field keys

@@ -17,21 +17,13 @@
 			"id": "defaultLocale",
 			"order": 1
 		},
-		"countryCheckProductId": {
-			"name": "countryCheckProductId",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "countryCheckProductId",
-			"order": 2
-		},
 		"numAppsPicker": {
 			"name": "numAppsPicker",
 			"type": "number",
 			"typeLabel": "number",
 			"required": false,
 			"id": "numAppsPicker",
-			"order": 3
+			"order": 2
 		},
 		"createdAt": {
 			"name": "createdAt",
@@ -39,7 +31,7 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "createdAt",
-			"order": 4
+			"order": 3
 		},
 		"updatedAt": {
 			"name": "updatedAt",
@@ -47,7 +39,7 @@
 			"typeLabel": "number",
 			"required": false,
 			"id": "updatedAt",
-			"order": 5
+			"order": 4
 		}
 	}
 }

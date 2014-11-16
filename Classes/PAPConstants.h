@@ -69,16 +69,11 @@ extern NSString *const kPAPSyncClassKey;
 extern NSString *const kPAPSyncMinVersionKey;
 extern NSString *const kPAPSyncDefaultLocaleKey;
 extern NSString *const kPAPSyncNumAppsPickerKey;
-extern NSString *const kPAPSyncCountryCheckProductId;
 
 #pragma mark - PFObject Country Class
 extern NSString *const kPAPCountryClassKey;
 extern NSString *const kPAPCountry;
-extern NSString *const kPAPCountryAffiliateLink;
-extern NSString *const kPAPCountryCampaignToken;
-extern NSString *const kPAPCountryAffiliateToken;
 extern NSString *const kPAPCountryAutoFollowFacebookIds;
-extern NSString *const kPAPCountryProductIds;
 
 #pragma mark - PFObject User Class
 // Field keys
