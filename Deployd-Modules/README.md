@@ -5,6 +5,10 @@ AppCorner require facebook login, so replace or add code in your deployd to allo
 
 `deployd/lib/resources/user-collection.js`
 
+AppCorner require to enable count for entities, so replace or add code in your deployd to allow count, you find the code in 
+
+`deployd/lib/resources/collection/index.js`
+
 Copy all modules from appcorner folder in a new app created with deployd.
 
 Start deployd.
