@@ -25,7 +25,7 @@ Add one record in COUNTRY resource from dashboard for example:
 `country: us`
 
 
-To run AppCorner for iOS on localhost uncomment
+To run AppCorner for iOS on localhost uncomment in Prefix.pch
 ```objc
 //#define SERVER_URL TEST_LOCAL_URL
 //#define SERVER_URI TEST_LOCAL_URI
