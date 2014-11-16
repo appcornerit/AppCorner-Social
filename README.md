@@ -9,7 +9,7 @@ This app for iOS (iPhone only) use [Deployd](http://deployd.com) as server on [a
 
 The story:
 - I developed [DeploydKit](https://github.com/appcornerit/DeploydKit)
-- I saw [Anypic](https://github.com/ParsePlatform/Anypic) a full featured photo sharing app built on [Parse.com](https://parse.com)
+- I saw [Anypic](https://github.com/ParsePlatform/Anypic) a full featured photo sharing app built by [Parse.com](https://parse.com)
 - I developed a layer called [ParseKit] (https://github.com/appcornerit/AppCorner-Social/tree/master/External/ParseKit) to replace Parse framework on top of DeploydKit
 - I developed the code of the server quickly
 - Anypic works with Deployd!
