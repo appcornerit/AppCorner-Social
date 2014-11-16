@@ -44,4 +44,7 @@ The fast and simple way to build a remote server for development/test/website as
 
 To build a production server with support to mobile app, I recommend to use a dedicated server for mongodb (with deployd installed to run the dashboard or batch scripts) and a frontend server using [AWS Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/getting-started/) fon node.js with autoscaling, nginx (with https enable) and deployd's dashboard disabled.
 
+
+You prefer [LoopBack](http://loopback.io) as backend, than refer to [How to Migrate an mBaaS: Deployd to LoopBack](http://strongloop.com/strongblog/how-to-migrate-an-mbaas-deployd-to-loopback/)
+
 enjoy!
