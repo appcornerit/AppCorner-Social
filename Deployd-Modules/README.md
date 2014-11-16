@@ -42,6 +42,6 @@ To deploy AppCorner on a remote server, I share my experience using AWS servers.
 
 The fast and simple way to build a remote server for development/test/website as [appcorner.it](http://www.appcorner.it) is deploy a BITNAMI vm with MEAN stack.
 
-To build a production server with support to mobile app, I recommend to use a dedicated server for mongodb (with deployd installed to run console or batch script) and a frontend server using AWS Elastic Beanstalk with autoscaling and nginx (with https enable) and disable deployd dashboard.
+To build a production server with support to mobile app, I recommend to use a dedicated server for mongodb (with deployd installed to run console or batch scripts) and a frontend server using AWS Elastic Beanstalk with autoscaling and nginx (with https enable) with deployd's dashboard disabled.
 
 enjoy!
