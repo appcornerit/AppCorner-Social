@@ -74,13 +74,13 @@
     [Parse setApplicationId:SERVER_URL clientKey:nil];
     [Parse setRequestLogEnabled:NO];    
 
-//    self.socketIO = [[SocketIO alloc] initWithDelegate:self];
+    self.socketIO = [[SocketIO alloc] initWithDelegate:self];
 //    // if you want to use https instead of http
 //    if(SERVER_PORT == PROD_SERVER_PORT)
 //    {
 //        //self.socketIO.useSecure = YES;
 //    }
-//    [self resetAppPostNotificationCounter];
+    [self resetAppPostNotificationCounter];
 
     if (application.applicationIconBadgeNumber != 0 && [PFInstallation currentInstallation]) {
         application.applicationIconBadgeNumber = 0;
@@ -211,10 +211,8 @@
 
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
 
-    //[self.socketIO setResourceName:user.objectId];
-    //NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys:@"name", @"app:create", nil];
-    //[self.socketIO connectToHost:SERVER_URI onPort:SERVER_PORT withParams:nil withNamespace:@"/app"];
-    //[self.socketIO connectToHost:SERVER_URI onPort:SERVER_PORT];
+    //enable socket
+    [self.socketIO connectToHost:SERVER_URI onPort:SERVER_PORT];
     
     // user has logged in - we need to fetch all of their Facebook data before we let them in
     if (![self shouldProceedToMainInterface:user]) {
@@ -333,7 +331,7 @@
     self.activityViewController = nil;
     
     //disconnect
-//    [self.socketIO disconnectForced];
+    [self.socketIO disconnectForced];
 }
 
 
@@ -570,7 +568,8 @@
 
 - (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
 {
-    NSLog(@"didReceiveMessage() >>> data: %@", packet.data);
+    //Deployd issue https://github.com/deployd/deployd/issues/141
+//    NSLog(@"didReceiveMessage() >>> data: %@", packet.data);
     if(packet && packet.name && [packet.name isEqualToString:kPAPSocketPayloadNewAppKey])
     {
         self.appPostNotificationCounter++;

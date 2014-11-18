@@ -58,7 +58,8 @@ else if(me.id == this.user || internal){
                 }
                 if(ids.length > 0)
                 {
-                    emit(dpd.user, {id: {$in: ids}}, 'app.follow.post',this.id); 
+                    //issue #141
+                    emit(dpd.user, {id: {$in: ids}}, 'app.follow.post',this.id);
                 }
             }
         });
