@@ -1,11 +1,17 @@
 AppCorner
 ============
 
-Share your favorites apps on AppCorner and discover great new apps around the world with your friends.
-
-**Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
+Share your favorites apps on AppCorner and discover new apps around the world with your friends.
 
 This app for iOS (iPhone only) use [Deployd](http://deployd.com) as server on [appcorner.it](http://www.appcorner.it) and  [DeploydKit](https://github.com/appcornerit/DeploydKit) library.
+
+Build your server is quite simple, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
+
+You can use AppCorner on appcorner.it to share your apps, your apps will soon posted on appcorner.it (work in progress).
+
+I encourage anyone who wants to contribute and update the project.
+You can build your social app that share musics, books or TV series (from iTunes) with few changes.
+
 
 The story:
 - I developed [DeploydKit](https://github.com/appcornerit/DeploydKit)
@@ -20,14 +26,7 @@ The story:
 - I developed AppCornerKit and [iTunesPicker](https://github.com/appcornerit/iTunesPicker) as new project starting from pieces of AppCorner
 - Now the app is open source
 
-The app on appcorner.it could be used to share your apps, get opinions, suggestions, ideas or find collaborations of other iOS developers.
-
-I encourage anyone who wants to contribute and update the project.
-You can build your social app that share musics, books or TV series (from iTunes) with few changes.
-
-Build your server is quite simple, so have fun without kill the appcorner.it server. Refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
-
-
+**Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
 
 ![Alt text](preview/1.png "Preview") 
 ![Alt text](preview/2.png "Preview") 
