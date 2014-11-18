@@ -12,7 +12,7 @@ This app for iPhone use [Deployd](http://deployd.com) as server (a great open so
 I encourage anyone who wants to contribute and update the project.
 You can build your social app that share musics, books or TV series (from iTunes) with few changes.
 
-This project containts an updated version of [DeploydKit](https://github.com/appcornerit/AppCorner-Social/tree/master/External/DeploydKit) project.
+This project uses APN, WebSockets and containts an updated version of [DeploydKit](https://github.com/appcornerit/AppCorner-Social/tree/master/External/DeploydKit) project.
 
 The story:
 - I developed [DeploydKit](https://github.com/appcornerit/DeploydKit)
