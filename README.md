@@ -5,9 +5,9 @@ Share your favorites apps on AppCorner and discover new apps around the world wi
 
 This app for iOS (iPhone only) use [Deployd](http://deployd.com) as server on [appcorner.it](http://www.appcorner.it) and  [DeploydKit](https://github.com/appcornerit/DeploydKit) library.
 
-Build your server is quite simple, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
+**Build your server is quite simple**, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
 
-You can use AppCorner on appcorner.it to share your apps with others developers, your apps will soon posted on appcorner.it (work in progress).
+**You can use AppCorner on appcorner.it to share your apps with others developers, your apps will soon posted on appcorner.it (work in progress).**
 
 I encourage anyone who wants to contribute and update the project.
 You can build your social app that share musics, books or TV series (from iTunes) with few changes.
@@ -29,7 +29,6 @@ The story:
 **Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
 
 ![Alt text](preview/1.png "Preview") 
-![Alt text](preview/2.png "Preview") 
 ![Alt text](preview/3.png "Preview") 
 
 
