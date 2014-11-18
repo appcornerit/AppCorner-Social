@@ -3,7 +3,7 @@ AppCorner
 
 Share your favorites apps on AppCorner and discover new apps around the world with your friends.
 
-This app for iPhone use [Deployd](http://deployd.com) as server on [appcorner.it](http://www.appcorner.it) and  [DeploydKit](https://github.com/appcornerit/DeploydKit) project.
+This app for iPhone use [Deployd](http://deployd.com) as server (a great open source platform over mongodb and node.js) that run on [appcorner.it](http://www.appcorner.it). 
 
 **Build your server is quite simple**, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
 
@@ -12,6 +12,7 @@ This app for iPhone use [Deployd](http://deployd.com) as server on [appcorner.it
 I encourage anyone who wants to contribute and update the project.
 You can build your social app that share musics, books or TV series (from iTunes) with few changes.
 
+This project containts an updated version of [DeploydKit](https://github.com/appcornerit/AppCorner-Social/tree/master/External/DeploydKit) project.
 
 The story:
 - I developed [DeploydKit](https://github.com/appcornerit/DeploydKit)
