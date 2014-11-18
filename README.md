@@ -7,7 +7,7 @@ This app for iOS (iPhone only) use [Deployd](http://deployd.com) as server on [a
 
 Build your server is quite simple, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
 
-You can use AppCorner on appcorner.it to share your apps, your apps will soon posted on appcorner.it (work in progress).
+You can use AppCorner on appcorner.it to share your apps with others developers, your apps will soon posted on appcorner.it (work in progress).
 
 I encourage anyone who wants to contribute and update the project.
 You can build your social app that share musics, books or TV series (from iTunes) with few changes.
