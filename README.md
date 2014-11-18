@@ -3,7 +3,7 @@ AppCorner
 
 Share your favorites apps on AppCorner and discover new apps around the world with your friends.
 
-This app for iPhone use [Deployd](http://deployd.com) as server on [appcorner.it](http://www.appcorner.it) and  [DeploydKit](https://github.com/appcornerit/DeploydKit) library.
+This app for iPhone use [Deployd](http://deployd.com) as server on [appcorner.it](http://www.appcorner.it) and  [DeploydKit](https://github.com/appcornerit/DeploydKit) project.
 
 **Build your server is quite simple**, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
 
@@ -24,7 +24,7 @@ The story:
 - The app not pass the [approval rule](https://developer.apple.com/app-store/review/guidelines/) 2.25 of App Store
 - I forgot the app for some time
 - I developed AppCornerKit and [iTunesPicker](https://github.com/appcornerit/iTunesPicker) as new project starting from pieces of AppCorner
-- Now the app is open source
+- Now AppCorner is open source
 
 **Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
 
