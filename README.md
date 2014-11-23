@@ -9,6 +9,8 @@ This app for iPhone use [Deployd](http://deployd.com) as server (a great open so
 
 **You can use AppCorner on appcorner.it to share your apps with others developers, your apps (available in iTunes Italy) are posted anonymously on [appcorner.it](http://www.appcorner.it/app-sviluppatori.html).**
 
+**You can also use AppCorner for iPhone to show your posted apps with your comments on your website using appcorner.it as service for free, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)**
+
 I encourage anyone who wants to contribute and update the project.
 You can build your social app that share musics, books or TV series (from iTunes) with few changes.
 
