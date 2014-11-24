@@ -27,7 +27,7 @@ The story:
 - AppCorner works with Deployd!
 - The app not pass the [approval rule](https://developer.apple.com/app-store/review/guidelines/) 2.25 of App Store
 - I forgot the app for some time
-- I developed AppCornerKit and [iTunesPicker](https://github.com/appcornerit/iTunesPicker) as new project starting from pieces of AppCorner
+- I developed [iTunesPicker](https://github.com/appcornerit/iTunesPicker) as new project starting from pieces of AppCorner
 - Now AppCorner is open source
 
 **Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
