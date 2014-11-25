@@ -1,7 +1,7 @@
 AppCorner
 ============
 
-Share your favorites apps on AppCorner and discover new apps around the world with your friends.
+Share your favorites apps on AppCorner and discover new apps around the world with your friends. The easy way to bookmarks apps with your iPhone on your website for free!
 
 This app for iPhone use [Deployd](http://deployd.com) as server (a great open source platform over mongodb and node.js) that run on [appcorner.it](http://www.appcorner.it). 
 
