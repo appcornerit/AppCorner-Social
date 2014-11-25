@@ -1,3 +1,5 @@
+var skipApps;
+var canLoadNextPage;
 
 var spinnerOpts = {
     lines: 17, // The number of lines to draw
@@ -24,6 +26,7 @@ $(function(){
                          $.each( opts.items, function(i) {
                                     if(opts.items && opts.items[i])
                                     {
+                                        var date = $.format.prettyDate(opts.items[i].created);
                                         var des = opts.items[i].description;
                                         if(!des)
                                         {
@@ -33,7 +36,7 @@ $(function(){
                                         if(opts.items[i].comments != '') {des = '<p class="comment"><i>'+opts.items[i].comments +'</i></p>'+ des; n=170;}
                                         des = des.length>n ? des.substr(0,n-1)+'&hellip;' : des;
                                 
-                                        var button = '<a href="'+opts.items[i].trackViewUrl+'" target="_blank"><div class="appstorebadge"><div class="text"><div class="line1">Per iPad su</div><div class="line2">App Store</div></div><div class="iphone"><div class=""></div><div class="screen"></div><div class=""></div></div></div></a>';
+                                        var button = '<a href="'+opts.items[i].trackViewUrl+'" target="_blank"><div class="appstorebadge"><div class="text"><div class="line1">Available on the</div><div class="line2">App Store</div></div><div class="iphone"><div class=""></div><div class="screen"></div><div class=""></div></div></div></a>';
                                 
                                         var icon = '<div class="center"><a href="'+opts.items[i].trackViewUrl+'" target="_blank"><img src="'+opts.items[i].artworkUrl60+'" class="as-item-logo"/></a></div>';
                                 
@@ -47,7 +50,7 @@ $(function(){
                                         }
                                 
                                         scrUrl = scrUrl+'</div>';
-                                        var item = '<div id="as-item-'+i+'" class="as-item">'+scrUrl+'<div class="as-item-desc"><span class="as-icon as-icon-small"><span class="as-icon-tag"></span></span><span class="as-tag">'+opts.items[i].primaryGenreName+'</span>&nbsp;&nbsp;<span class="as-icon as-icon-small"></span>'+icon+'<h3 class="center">'+opts.items[i].trackName+'</h3>'+des+'<div><br/>'+button+'</div></div></div>';
+                                        var item = '<div id="as-item-'+i+'" class="as-item">'+scrUrl+'<div class="as-item-desc"><span class="as-icon as-icon-small"><span class="as-icon-tag"></span></span><span class="as-tag">'+opts.items[i].primaryGenreName+'</span>&nbsp;&nbsp;<span class="as-icon as-icon-small"><span class="as-icon-calendar"></span></span><span class="as-date">'+date+'</span>'+icon+'<h3 class="center">'+opts.items[i].trackName+'</h3>'+des+'<div><br/>'+button+'</div></div></div>';
 
                                         $(item).appendTo('#'+opts.container);
                                         $('#'+opts.container+opts.items[i].appcode).owlCarousel({
@@ -64,15 +67,22 @@ $(function(){
            apps : function(containerName) {
                     var spinner = new Spinner(spinnerOpts).spin();
                     $('#'+containerName).append(spinner.el);
-                    //http://www.appcorner.it/userapps?fb=[YOUR FACEBOOK ID]&country=[ITUNES COUNTRY CODE]&limit=[APPS LIMIT, MAX 12 BY DEFAULT]&phgat=[YOUR PHG AFFILIATE TOKEN]
+                    //http://www.appcorner.it/userapps?fb=[YOUR FACEBOOK ID]&country=[ITUNES COUNTRY CODE]&limit=[APPS LIMIT, MAX 12 BY DEFAULT]&phgat=[YOUR PHG AFFILIATE TOKEN]&skip=[NUMBER OF APPS TO SKIP]
             
                     //INSERT BELOW YOUR ID FACEBOOK AND THE CODE OF THE ITUNES'S COUNTRY, BOTH ARE REQUIRED
-                    $.get("http://www.appcorner.it/userapps?fb=0000000000&country=us",function(apps,status){
+                    $.get("http://www.appcorner.it/userapps?fb=00000000&country=us&skip="+skipApps,function(apps,status){
                         var appsCounter = (apps == null?0:apps.length);
                         if(appsCounter > 0)
                         {
                             $.appstore({"items": apps, "container":containerName});
                         }
+                          
+                        //code to load next apps block
+                        skipApps = skipApps+appsCounter;
+                        if(appsCounter > 0){
+                           canLoadNextPage = true;
+                        }
+                          
                         spinner.stop();
                 });
            }
@@ -81,6 +91,21 @@ $(function(){
 
 
 $(document).ready(function(){
+                  skipApps = 0;
+                  canLoadNextPage = false;
+                  var heightOffset = 400; //change as you need
+                  
                   $.apps("userapps-container");
+                  
+                  //load next apps block on page scroll
+                  $(window).scroll(function () {
+                                       if ($(window).scrollTop() >= $(document).height() - $(window).height() - heightOffset) {
+                                            if(canLoadNextPage)
+                                            {
+                                                canLoadNextPage = false;
+                                                $.apps("userapps-container");
+                                            }
+                                        }
+                                   });
 });
 
