@@ -1,7 +1,7 @@
 Show your favorite apps in your website
 ============
 
-You can use AppCorner for iPhone to show your posted apps with your comments on your website using appcorner.it for free.
+You can use AppCorner for iPhone to show your posted apps with your comments on your website using appcorner.it as service for free.
 
 Post at least one app in Appcorner for iPhone, retrive your facebook id (you could add a breakpoint in  PFLogInViewController.m for facebookId variable).
 
