@@ -12,7 +12,7 @@ Try userapps.html, that's it!
 
 **You can create a website with price drops as appcorner.it in minutes**
 
-The API will be published soon!
+The API will be published soon for App Store worldwide!
 
 The free service on appcorner.it is WITHOUT WARRANTY OF ANY KIND AND UPTIME AVAILABILITY.
 
