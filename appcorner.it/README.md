@@ -1,4 +1,4 @@
-Show your favorite apps in your website
+Show apps on your web site ... and make money.
 ============
 
 ###You can use AppCorner for iPhone to show your posted apps with your comments on your website an make money with your iTunes affiliate token
