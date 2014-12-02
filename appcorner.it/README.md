@@ -5,11 +5,11 @@ Show apps on your web site ... and make money.
 
 Post at least one app in AppCorner for iPhone, retrive your facebook id (you could add a breakpoint in  PFLogInViewController.m for facebookId variable).
 
-Paste your facebook id in `appcorner.js`, open userapps.html, that's it!
+Paste your facebook id in `appcorner.js`, open userapps.html (is responsive), that's it!
 
 ###You can create a website with price drops as appcorner.it in minutes an make money with your iTunes affiliate token
 
-Paste your facebook id in `appcorner.js`, open pricedrops.html, that's it!
+Paste your facebook id in `appcorner.js`, open pricedrops.html (is responsive), that's it!
 
 ##Contribute to open source
 I encourage anyone who wants to build your own widgets to show the apps as open source, who know php could create a plugin for wordpress.
