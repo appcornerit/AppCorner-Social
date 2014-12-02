@@ -5,21 +5,24 @@ Share your favorites apps on AppCorner and discover new apps around the world wi
 
 This app for iPhone use [Deployd](http://deployd.com) as server (a great open source platform over mongodb and node.js) that run on [appcorner.it](http://www.appcorner.it). 
 
-**Build your server is quite simple**, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
+You can use AppCorner on appcorner.it to share your apps with others developers, your apps are posted anonymously on [appcorner.it](http://www.appcorner.it/en/app-devs.html).
 
-**You can use AppCorner on appcorner.it to share your apps with others developers, your apps are posted anonymously on [appcorner.it](http://www.appcorner.it/en/app-devs.html).**
+###Show apps on your web site for free ...and make money
+**You can create a website with price drops as appcorner.it in minutes, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)**
 
 **You can also use AppCorner for iPhone to show your posted apps (in any country and language available in App Store) with your comments on your website using appcorner.it as service for free (without install deployd on your server), refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)**
 
-**You can create a website with price drops as appcorner.it in minutes, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)**
+###AppCorner on your server
+**Build your server is quite simple**, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
 
+###Contribute to open source
 I encourage anyone who wants to contribute and update the project.
 You can build your social app that share musics, books or TV series (from iTunes) with few changes.
 To retrieve statistics about apps (or any other iTunes entity) take a look at the [iTunesPicker](https://github.com/appcornerit/iTunesPicker) project.
 
 This project uses APN, WebSockets and containts an updated version of [DeploydKit](https://github.com/appcornerit/AppCorner-Social/tree/master/External/DeploydKit) project.
 
-The story:
+###The story
 - I developed [DeploydKit](https://github.com/appcornerit/DeploydKit)
 - I saw [Anypic](https://github.com/ParsePlatform/Anypic) a full featured photo sharing app built by [Parse.com](https://parse.com)
 - I developed a layer called [ParseKit] (https://github.com/appcornerit/AppCorner-Social/tree/master/External/ParseKit) to replace Parse framework on top of DeploydKit
@@ -33,9 +36,3 @@ The story:
 - Now AppCorner is open source
 
 **Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
-
-![Alt text](preview/1.png "Preview") 
-![Alt text](preview/3.png "Preview") 
-
-
-
