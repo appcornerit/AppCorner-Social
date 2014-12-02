@@ -8,9 +8,9 @@ This app for iPhone use [Deployd](http://deployd.com) as server (a great open so
 You can use AppCorner on appcorner.it to share your apps with others developers, your apps are posted anonymously on [appcorner.it](http://www.appcorner.it/en/app-devs.html).
 
 ###Show apps on your web site for free ...and make money
-**You can create a website with price drops as appcorner.it in minutes, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)**
+You can create a website with price drops as appcorner.it in minutes, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)
 
-**You can also use AppCorner for iPhone to show your posted apps (in any country and language available in App Store) with your comments on your website using appcorner.it as service for free (without install deployd on your server), refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)**
+You can also use AppCorner for iPhone to show your posted apps (in any country and language available in App Store) with your comments on your website using appcorner.it as service for free (without install deployd on your server), refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)
 
 ###AppCorner on your server
 **Build your server is quite simple**, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
