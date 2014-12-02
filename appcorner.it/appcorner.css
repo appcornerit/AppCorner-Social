@@ -1,3 +1,8 @@
+/*
+ * 	www.appcorner.it
+ *	v1.0.0
+ */
+
 .appstore-container *{
     margin:0 auto;
     padding:0;
@@ -169,95 +174,6 @@
 #appstore-container-selected-end
 {
     display:none;
-}
-div.appstorebadge {
-    position: relative;
-    width: 155px;
-    height: 50px;
-    background: #000;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-}
-div.text {
-    position: absolute;
-    width: 106px;
-    height: 49px;
-    top: 0px;
-    left: 37px;
-    font-family: Helvetica, sans-serif;
-    color: #fff;	
-}
-div.text div.line1 {
-    position: absolute;
-    top: 7px;
-    width: 112px;
-    height: 49px;
-    font-size: 12px;
-	letter-spacing: 0.12em;
-}
-div.text div.line2 {
-    position: absolute;
-    width: 120px;
-    top: 18px;
-    height: 49px;
-    font-size: 22.5px;
-	letter-spacing: 0.04em;
-}
-div.iphone {
-    position: absolute;
-    left: 11px;
-    width: 18px;
-    top: 8px;
-    height: 34px;
-    background: #fff;
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-}
-div.iphone div.button {
-    position: absolute;
-    left: 7.5px;
-    width: 3.5px;
-    top: 29.5px;
-    height: 3.5px;
-    background: #000;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
-}
-div.iphone div.screen {
-    position: absolute;
-    left: 1px;
-    width: 16px;
-    top: 6px;
-    height: 22px;
-    background: #000;
-}
-div.iphone div.earpiece {
-    position: absolute;
-    left: 7.5px;
-	top: 3px;
-	width: 3px;
-	height: 0.5px;
-	background: #000;
-}
-div.grey, div.grey div.iphone div.screen, div.grey div.iphone div.earpiece, div.grey div.iphone div.button { 
-	background-color: #7f7f7f; }
-div.white div.iphone { background-color: #000; } 
-div.white, div.white div.iphone div.screen, div.white div.iphone div.earpiece, div.white div.iphone div.button {
-	background-color: #fff; } 
-div.white { border: 2px solid #000; } 
-div.white div.text { color: #000; }
-div.zoom2 {
-	zoom: 200%;
-	-moz-transform: scale(2);
-	-moz-transform-origin: 0 0;
-}
-div.zoom3 {
-	zoom: 300%;
-	-moz-transform: scale(3);	
-	-moz-transform-origin: 0 0;
 }
 .center {
      color:#ff3b30;
