@@ -19,6 +19,6 @@ This free service on appcorner.it is **WITHOUT WARRANTY OF ANY KIND AND UPTIME A
 
 The service is now in beta, it requires to compile and login in AppCorner for iPhone, recovery the facebook id to copy in appcorner.js, in the future everything will be easier, for now it remains a service for developers only.
 
-[Let me know](http://www.appcorner.it/en/contacts.html) if you use this service on your site, so I can notify you when appcorner.it is down for maintenance.
+[Let me know](http://www.appcorner.it/en/contacts.html) if you use this service on your site, so I can notify you when appcorner.it is down for maintenance or API changes.
 
 enjoy!
