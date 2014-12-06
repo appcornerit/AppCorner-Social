@@ -113,7 +113,6 @@ $(function(){
                     //skip=[NUMBER OF APPS TO SKIP]
                     //phgat=[YOUR PHG AFFILIATE TOKEN]
                     //campaign=[YOUR PHG CAMPAIGN]
-                    //shortUrl=true [USE SHORT LINK INSTEAD OF STANDARD LINK https://developer.apple.com/library/ios/qa/qa1633/_index.html]
             
                     //EXAMPLE: YOUR APPS POSTED ON APPCORNER FOR IPHONE, LOADED FROM ITUNES FOR UNITED STATES
                     //BEFORE TRY INSERT YOUR FACEBOOK ID USED TO LOGIN IN APPCORNER SOCIAL FOR IPHONE (fb=)
@@ -146,6 +145,7 @@ $(function(){
                         //skip=[NUMBER OF APPS TO SKIP]
                         //phgat=[YOUR PHG AFFILIATE TOKEN]
                         //campaign=[YOUR PHG CAMPAIGN]
+                        //shortUrl=true [USE SHORT LINK INSTEAD OF STANDARD LINK https://developer.apple.com/library/ios/qa/qa1633/_index.html]            
                         //
                         //OPTIONAL FILTERS:
                         //device=[DEFAULT ALL OR ONLY ONE FROM: iphone,ipad,mac]
