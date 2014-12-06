@@ -11,6 +11,7 @@ Paste your facebook id in `appcorner.js`, open userapps.html (is responsive), th
 
 Paste your facebook id in `appcorner.js`, open pricedrops.html (is responsive), that's it!
 
+See API detail on [wiki](https://github.com/appcornerit/AppCorner-Social/wiki/AppCorner.it-API)
 See how to join to [iTunes Affiliate Program](https://www.apple.com/itunes/affiliates/resources/documentation/itunes_app_store_affiliate_program.html)
 
 ##Contribute to open source
