@@ -1,4 +1,4 @@
-Show apps on your web site ... and make money.
+Show apps on your web site and make money with iTunes Affiliate Program
 ============
 
 ###You can use AppCorner for iPhone to show your posted apps with your comments on your website an make money with your iTunes affiliate token
@@ -10,6 +10,8 @@ Paste your facebook id in `appcorner.js`, open userapps.html (is responsive), th
 ###You can create a website with price drops as appcorner.it in minutes an make money with your iTunes affiliate token
 
 Paste your facebook id in `appcorner.js`, open pricedrops.html (is responsive), that's it!
+
+See how to join to [iTunes Affiliate Program](https://www.apple.com/itunes/affiliates/resources/documentation/itunes_app_store_affiliate_program.html)
 
 ##Contribute to open source
 I encourage anyone who wants to build your own widgets to show the apps as open source, who know php could create a plugin for wordpress.
