@@ -3,12 +3,15 @@ AppCorner
 
 Share your favorites apps on AppCorner and discover new apps around the world with your friends. The easy way to bookmarks apps with your iPhone on your website for free!
 
-This app for iPhone use [Deployd](http://deployd.com) as server (a great open source platform over mongodb and node.js) that run on [appcorner.it](http://www.appcorner.it). 
+This app for iPhone use [Deployd](http://deployd.com) as server (a great open source platform over mongodb and node.js) that run on [appcorner.it](http://www.appcorner.it/en/). 
 
 You can use AppCorner on appcorner.it to share your apps with others developers, your apps are posted anonymously on [appcorner.it](http://www.appcorner.it/en/app-devs.html).
 
 ###Show apps on your web site for free ...and make money
 You can create a website with price drops as appcorner.it in minutes, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)
+
+Price drops are also available on your iPhone, take a look at the [iTunesPicker](https://github.com/appcornerit/iTunesPicker) project.
+
 
 You can also use AppCorner for iPhone to show your posted apps (in any country and language available in App Store) with your comments on your website using appcorner.it as service for free (without install deployd on your server), refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)
 
