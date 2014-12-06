@@ -1,12 +1,5 @@
 Show apps on your web site and make money with iTunes Affiliate Program
 ============
-
-###You can use AppCorner for iPhone to show your posted apps with your comments on your website an make money with your iTunes affiliate token
-
-Post at least one app in AppCorner for iPhone, retrive your facebook id (you could add a breakpoint in  PFLogInViewController.m for facebookId variable).
-
-Paste your facebook id in `appcorner.js`, open userapps.html (is responsive), that's it!
-
 ###You can create a website with price drops as appcorner.it in minutes an make money with your iTunes affiliate token
 
 Paste your facebook id in `appcorner.js`, open pricedrops.html (is responsive), that's it!
@@ -14,6 +7,12 @@ Paste your facebook id in `appcorner.js`, open pricedrops.html (is responsive), 
 See API detail on [wiki](https://github.com/appcornerit/AppCorner-Social/wiki/AppCorner.it-API)
 
 See how to join to [iTunes Affiliate Program](https://www.apple.com/itunes/affiliates/resources/documentation/itunes_app_store_affiliate_program.html)
+
+###You can use AppCorner for iPhone to show your posted apps with your comments on your website an make money with your iTunes affiliate token
+
+Post at least one app in AppCorner for iPhone, retrive your facebook id (you could add a breakpoint in  PFLogInViewController.m for facebookId variable).
+
+Paste your facebook id in `appcorner.js`, open userapps.html (is responsive), that's it!
 
 ##Contribute to open source
 I encourage anyone who wants to build your own widgets to show the apps as open source, who know php could create a plugin for wordpress.
