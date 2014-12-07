@@ -498,13 +498,20 @@
 - (void)appFooterView:(PAPAppFooterView *)appFooterView didTapAppButton:(UIButton *)button app:(PAApp *)app
 {
     if (app) {
-        NSDictionary *appParameters = @{SKStoreProductParameterITunesItemIdentifier : app.appId, SKStoreProductParameterAffiliateToken:kPGHAffiliate};
+        NSDictionary *appParameters = @{SKStoreProductParameterITunesItemIdentifier : app.appId,
+                                        SKStoreProductParameterAffiliateToken:kPGHAffiliate,
+                                        SKStoreProductParameterCampaignToken:[[NSBundle mainBundle] bundleIdentifier]};
         SKStoreProductViewController *productViewController = [[SKStoreProductViewController alloc] init];
         [productViewController setDelegate:self];
         [productViewController loadProductWithParameters:appParameters completionBlock:nil];
+#if TARGET_IPHONE_SIMULATOR
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You cannot open App Store on simulator" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Cancel", nil];
+        [alert show];
+#else
         [self presentViewController:productViewController
                            animated:YES
                          completion:nil];
+#endif
     }
 }
 - (void)appFooterView:(PAPAppFooterView *)appFooterView didTapShareButton:(UIButton *)button app:(PAApp *)app

@@ -509,13 +509,20 @@ static const CGFloat kPAPCellInsetWidth = 10.0f;
 #pragma mark - PAPAppHeaderViewDelegate
 - (void)appHeaderView:(PAPAppHeaderView *)appHeaderView didTapOnAppIconButton:(UIButton *)button app:(PAApp *)tappedApp
 {
-    NSDictionary *appParameters = @{SKStoreProductParameterITunesItemIdentifier : tappedApp.appId, SKStoreProductParameterAffiliateToken:kPGHAffiliate};
+    NSDictionary *appParameters = @{SKStoreProductParameterITunesItemIdentifier : tappedApp.appId,
+                                    SKStoreProductParameterAffiliateToken:kPGHAffiliate,
+                                    SKStoreProductParameterCampaignToken:[[NSBundle mainBundle] bundleIdentifier]};
     SKStoreProductViewController *productViewController = [[SKStoreProductViewController alloc] init];
     [productViewController setDelegate:self];
     [productViewController loadProductWithParameters:appParameters completionBlock:nil];
+#if TARGET_IPHONE_SIMULATOR
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You cannot open App Store on simulator" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Cancel", nil];
+    [alert show];
+#else
     [self presentViewController:productViewController
                        animated:YES
                      completion:nil];
+#endif
 }
 
 
