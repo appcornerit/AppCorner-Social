@@ -1,7 +1,7 @@
 Show apps on your web site and make money with iTunes Affiliate Program
 ============
 ###You can create a website with price drops as appcorner.it in minutes an make money with your iTunes affiliate token
-Log in on AppCorner for iPhone, retrive your facebook id (you could add a breakpoint in PFLogInViewController.m for facebookId variable).
+Log in on AppCorner for iPhone (don't use the simulator), retrive your facebook id (you could add a breakpoint in PFLogInViewController.m for facebookId variable).
 
 Paste your facebook id in `appcorner.js`, open pricedrops.html (responsive web design), that's it!
 
@@ -11,7 +11,7 @@ See how to join to [iTunes Affiliate Program](https://www.apple.com/itunes/affil
 
 ###You can use AppCorner for iPhone to show your posted apps with your comments on your website an make money with your iTunes affiliate token
 
-Post at least one app in AppCorner for iPhone, retrive your facebook id (you could add a breakpoint in PFLogInViewController.m for facebookId variable).
+Post at least one app in AppCorner for iPhone  (don't use the simulator), retrive your facebook id (you could add a breakpoint in PFLogInViewController.m for facebookId variable).
 
 Paste your facebook id in `appcorner.js`, open userapps.html (responsive web design), that's it!
 
