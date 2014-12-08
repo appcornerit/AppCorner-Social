@@ -151,7 +151,9 @@ $(function(){
                         //device=[DEFAULT ALL OR ONLY ONE FROM: iphone,ipad,mac]
                         //languages=[MUST HAVE ONE OF THOSE LANGUAGES COMMAS SEPARATED]
                         //price=0 filter free app only
-                        //genre=[PRIMARY GENRE ONLY ONE FROM: books, business, catalogs, education, entertainment, finance, food, games, health, lifestyle, medical, music, navigation, news, newsstand, photo video, productivity, reference, social, sports, travel, utilities, weather]
+                        //genre=[DEAFAULT ALL, OR ONLY ONE PRIMARY GENRE]
+                        //      PRIMARY GENRE for iOS: books, business, catalogs, education, entertainment, finance, food, games, health, lifestyle, medical, music, navigation, news, newsstand, photo video, productivity, reference, social, sports, travel, utilities, weather
+                        //      PRIMARY GENRE for Mac: business, developer, education, entertainment, finance, games, graphics, health, lifestyle, medical, music, news, photography, productivity, reference, social, sports, travel, utilities, video, weather
             
                         //EXAMPLE: SHOW PRICE DROPS TO FREE, GAMES FOR IPHONE ONLY THAT CONTAINS AT LEAST ENGLISH OR ITALIAN LANGUAGE, LOADED FROM THE ITUNES COUNTRY USED TO LOGIN IN APPCORNER SOCIAL (FOR THE YOUR FACEBOOK ID)
                         //BEFORE TRY INSERT YOUR FACEBOOK ID USED TO LOGIN IN APPCORNER SOCIAL FOR IPHONE (fb=), in case of empty result remove some filters.
