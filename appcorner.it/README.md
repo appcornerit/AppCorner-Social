@@ -9,6 +9,8 @@ See API detail on [wiki](https://github.com/appcornerit/AppCorner-Social/wiki/Ap
 
 See how to join to [iTunes Affiliate Program](https://www.apple.com/itunes/affiliates/resources/documentation/itunes_app_store_affiliate_program.html)
 
+Cannot find enough discounts for your country? Contact me I will add your country to monitoring prices on appcorner.it
+
 ###You can use AppCorner for iPhone to show your posted apps with your comments on your website an make money with your iTunes affiliate token
 
 Post at least one app in AppCorner for iPhone  (don't use the simulator), retrive your facebook id (you could add a breakpoint in PFLogInViewController.m for facebookId variable).
