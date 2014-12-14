@@ -18,7 +18,7 @@ You can also use AppCorner for iPhone to show your posted apps (in any country a
 
 This project uses APN, WebSockets and containts an updated version of [DeploydKit](https://github.com/appcornerit/AppCorner-Social/tree/master/External/DeploydKit) project.
 
-####Publish on App Store
+###Publish on App Store
 The app "as is" could not pass the approval rule 2.25 of App Store "Apps that display Apps other than your own for purchase or promotion in a manner similar to or confusing with the App Store will be rejected".
 You can build your social app to publish on App Store that share musics, books or TV series (from iTunes) quickly with few changes in DAAppsViewController.m, PAAppStoreQuery.m, Localizable.strings. Open an issue to ask for support.
 
