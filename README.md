@@ -19,8 +19,7 @@ You can also use AppCorner for iPhone to show your posted apps (in any country a
 This project uses APN, WebSockets and containts an updated version of [DeploydKit](https://github.com/appcornerit/AppCorner-Social/tree/master/External/DeploydKit) project.
 
 ###Publish on App Store
-The app "as is" could not pass the approval rule 2.25 of App Store "Apps that display Apps other than your own for purchase or promotion in a manner similar to or confusing with the App Store will be rejected".
-You can build your social app to publish on App Store that share musics, books or TV series (from iTunes) quickly with few changes in DAAppsViewController.m, PAAppStoreQuery.m, Localizable.strings. Open an issue to ask for support.
+You can build your social app to publish on App Store that share musics, books or TV series (from iTunes) quickly with few changes in DAAppsViewController.m, PAAppStoreQuery.m.
 
 ###The story
 - I developed [DeploydKit](https://github.com/appcornerit/DeploydKit)
@@ -30,7 +29,6 @@ You can build your social app to publish on App Store that share musics, books o
 - Anypic works with Deployd!
 - I moved the photo entity as app entity (and other customizations) and so the new name is AppCorner
 - AppCorner works with Deployd!
-- The app not pass the [approval rule](https://developer.apple.com/app-store/review/guidelines/) 2.25 of App Store
 - I forgot the app for some time
 - I developed [iTunesPicker](https://github.com/appcornerit/iTunesPicker) as new project starting from pieces of AppCorner
 - Now AppCorner is open source
