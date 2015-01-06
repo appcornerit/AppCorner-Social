@@ -52,6 +52,9 @@ typedef NS_ENUM(NSInteger, PAPFindFriendsFollowStatus) {
         self.outstandingCountQueries = [NSMutableDictionary dictionary];
         
         self.selectedEmailAddress = @"";
+        
+        // Whether the built-in pagination is enabled
+        self.paginationEnabled = YES;
 
         // Whether the built-in pull-to-refresh is enabled
         self.pullToRefreshEnabled = YES;
