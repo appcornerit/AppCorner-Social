@@ -7,6 +7,8 @@ This app for iPhone use [Deployd](http://deployd.com) as server (a great open so
 
 You can use AppCorner on appcorner.it to share your apps with others developers, your apps are posted anonymously on [appcorner.it](http://www.appcorner.it/en/app-devs.html).
 
+**To see your app on appcorner.it (website/twitter/facebook) and iTunesPicker as price reduction, post your app on appcorner social with the red clock icon enabled at least 12 hours before change the price from the App Store.**  
+
 ###Show apps on your web site for free and make money with iTunes Affiliate Program
 **You can create a website with price drops as [appcorner.it](http://www.appcorner.it/en/) in minutes**, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it).
  Price drops are also available on your iPhone, take a look at the [iTunesPicker](https://github.com/appcornerit/iTunesPicker) project.
