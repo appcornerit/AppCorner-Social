@@ -169,15 +169,11 @@
     app.isUniversal = [features containsObject:@"iosUniversal"];
     app.formattedPrice = NSLocalizedString([result[@"formattedPrice"] uppercaseString],nil);
     NSString *iconUrlString = result[@"artworkUrl512"];
-    NSArray *iconUrlComponents = [iconUrlString componentsSeparatedByString:@"."];
-    NSMutableArray *mutableIconURLComponents = [[NSMutableArray alloc] initWithArray:iconUrlComponents];
-    [mutableIconURLComponents insertObject:@"128x128-75" atIndex:mutableIconURLComponents.count-1];
-    iconUrlString = [mutableIconURLComponents componentsJoinedByString:@"."];
     
     NSString *iconThumbnailUrlString = result[@"artworkUrl60"];
     app.iconThumbnailURL = iconThumbnailUrlString;
     
-    app.iconURL = iconUrlString;    
+    app.iconURL = result[@"artworkUrl100"];
     app.userRatingAllVersions = [result[@"averageUserRating"] floatValue];
     app.userRatingCountAllVersions = [result[@"userRatingCount"] integerValue];
     app.userRating = [result[@"averageUserRatingForCurrentVersion"] floatValue];
