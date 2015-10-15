@@ -69,8 +69,7 @@
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+    self.window = [[[UIApplication sharedApplication] delegate] window];
     [Parse setApplicationId:SERVER_URL clientKey:nil];
     [Parse setRequestLogEnabled:NO];    
 
