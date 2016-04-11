@@ -3036,7 +3036,7 @@
 						DevelopmentTeam = MR696CCQV3;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
