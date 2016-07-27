@@ -1,8 +1,5 @@
-var validation = require('validation')
-  , util = require('util')
+var util = require('util')
   , Collection = require('./collection')
-  , db = require('../db')
-  , EventEmitter = require('events').EventEmitter
   , uuid = require('../util/uuid')
   , crypto = require('crypto')
   , _ = require('underscore')
@@ -24,8 +21,6 @@ var validation = require('validation')
 
 function UserCollection(name, options) {
   Collection.apply(this, arguments);
-
-  var config = this.config;
 
   if(!this.properties) {
     this.properties = {};
@@ -60,8 +55,13 @@ UserCollection.prototype.handle = function (ctx) {
   }
 
   if(ctx.url === '/logout') {
-    if (ctx.res.cookies) ctx.res.cookies.set('sid', null, {overwrite: true});
-    ctx.session.remove(ctx.done);
+    var logoutDomain = { event: "LOGOUT" };
+    uc.addDomainAdditions(logoutDomain);
+    uc.doBeforeRequestEvent(ctx, logoutDomain, function(err) {
+      if (err) return ctx.done(err);
+      if (ctx.res.cookies) ctx.res.cookies.set('sid', null, {overwrite: true});
+      ctx.session.remove(ctx.done);
+    });
     return;
   }
 
@@ -85,7 +85,7 @@ UserCollection.prototype.handle = function (ctx) {
     case 'GET':
       if(ctx.url === '/me') {
         debug('session %j', ctx.session.data);
-        noSuchUser = function () {
+        var noSuchUser = function () {
           // set no-cache headers
           ctx.res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
           ctx.res.setHeader("Pragma", "no-cache");
@@ -108,12 +108,13 @@ UserCollection.prototype.handle = function (ctx) {
             return ctx.done({statusCode: 500, message: "Error retrieving user for verification"});
           }
 
-          var userHash = uc.getUserAndPasswordHash(user);
+          var userHash = user ? uc.getUserAndPasswordHash(user) : null;
 
           // verify that the username and password haven't changed since this session was created
           if (ctx.session.data.userhash === userHash) {
             // hash verified, call find() now to ensure all event scripts are executed
             return uc.find(ctx, function(err, user){
+              if (!user) return noSuchUser(); // if the request was cancelled by the event script
               delete user.password;
               ctx.done.apply(null, arguments);
             });
@@ -127,17 +128,22 @@ UserCollection.prototype.handle = function (ctx) {
     break;
     case 'POST':
       if(ctx.url === '/login') {
-          //appcorner: login DISABLED for fblogin
-          ctx.res.statusCode = 401;
-          ctx.done('login disabled');
-          return;
-          /////////////////////////////////////        
-          this.handleLogin(ctx);
-          break;
+        //appcorner: login DISABLED for fblogin
+        ctx.res.statusCode = 401;
+        ctx.done('login disabled');
+        return;
+        /////////////////////////////////////
+        var loginDomain = { event: "LOGIN" };
+        uc.addDomainAdditions(loginDomain);
+        uc.doBeforeRequestEvent(ctx, loginDomain, function(err) {
+          if (err) return ctx.done(err);
+          uc.handleLogin(ctx);
+        });
+        break;
       }
 
           //appcorner: fblogin added
-          if(ctx.url === '/fblogin') {              
+          if(ctx.url === '/fblogin') {
               request.get({
                           headers: {'content-type' : 'application/x-www-form-urlencoded'},
                           url:     'https://graph.facebook.com/me?fields=id&access_token='+ctx.body.accesstoken
@@ -146,9 +152,9 @@ UserCollection.prototype.handle = function (ctx) {
                           if(error) return ctx.done(error);
                           if(JSON.parse(body).id != ctx.body.facebookId)
                           {
-                            ctx.res.statusCode = 401;
-                            ctx.done('bad fb credentials');
-                            return;
+                          ctx.res.statusCode = 401;
+                          ctx.done('bad fb credentials');
+                          return;
                           }
                           else
                           {
@@ -162,22 +168,22 @@ UserCollection.prototype.handle = function (ctx) {
                                          {
                                          ctx.dpd.user.post({username: usernameVal, password: passwordVal, facebookId: facebookIdVal},
                                                            function(user, err) {
-                                                              if(err) return ctx.done(err);
-                                                              ctx.req.body.username = user.username;
-                                                              ctx.req.body.password = user.password; 
-                                                              uc.handleLogin(ctx);
-                                                              return;
+                                                           if(err) return ctx.done(err);
+                                                           ctx.req.body.username = user.username;
+                                                           ctx.req.body.password = user.password;
+                                                           uc.handleLogin(ctx);
+                                                           return;
                                                            });
                                          
                                          }
                                          else if(user) {
-                                              ctx.req.body.username = user.username;
-                                              ctx.req.body.password = user.password;  
-                                              uc.handleLogin(ctx);
-                                              return;
+                                         ctx.req.body.username = user.username;
+                                         ctx.req.body.password = user.password;
+                                         uc.handleLogin(ctx);
+                                         return;
                                          }
                                          else if(err){
-                                            ctx.done(err);
+                                         ctx.done(err);
                                          }
                                          });
                           }
@@ -185,9 +191,12 @@ UserCollection.prototype.handle = function (ctx) {
               break;
           }
           ////////////////////////////////////////////////////////////
-
+          
       /* falls through */
     case 'PUT':
+      if (!ctx.body && typeof ctx.body !== "object") {
+        return ctx.done("Missing request body");
+      }
       this.setPassword(ctx.body);
       var isSelf = ctx.session.user && ctx.session.user.id === ctx.query.id || (ctx.body && ctx.body.id);
       if ((ctx.query.id || ctx.body.id) && ctx.body && !isSelf && !ctx.session.isRoot && !ctx.req.internal) {
@@ -389,6 +398,9 @@ UserCollection.prototype.setPassword = function (body) {
  * @return {string}          The hash, as a hex digest.
  */
 UserCollection.prototype.hash = function (password, salt) {
+  if (password && !isNaN(password)){
+    password = password.toString();
+  }
   return crypto.createHmac('sha256', salt).update(password).digest('hex');
 };
 

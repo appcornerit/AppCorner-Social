@@ -1,13 +1,10 @@
 var validation = require('validation')
   , util = require('util')
-  , fs = require('fs')
   , path = require('path')
   , Resource = require('../../resource')
-  , db = require('../../db')
-  , EventEmitter = require('events').EventEmitter
   , debug = require('debug')('collection')
   , path = require('path')
-  , Script = require('../../script');
+  , _ = require('underscore');
 
 /**
  * A `Collection` validates incoming requests then proxies them into a `Store`.
@@ -34,8 +31,9 @@ function Collection(name, options) {
 util.inherits(Collection, Resource);
 Collection.external = {};
 Collection.prototype.clientGeneration = true;
+Collection.domainAdditions = {};
 
-Collection.events  = ['Get', 'Validate', 'Post', 'Put', 'Delete'];
+Collection.events  = ['Get', 'Validate', 'Post', 'Put', 'Delete', 'AfterCommit', 'BeforeRequest'];
 Collection.dashboard = {
     path: path.join(__dirname, 'dashboard')
   , pages: ['Properties', 'Data', 'Events', 'API']
@@ -81,7 +79,7 @@ Collection.prototype.validate = function (body, create) {
       }
     } else if(prop.required) {
       debug('%s is required', key);
-      if(create) {
+      if(create || body.hasOwnProperty(key)) {
         errors[key] = 'is required';
       }
     } else if(type === 'boolean') {
@@ -125,7 +123,8 @@ Collection.prototype.sanitize = function (body) {
       sanitized[key] = parseFloat(val);
     } else if(expected == 'string' && actual == 'number') {
       sanitized[key] = '' + val;
-    }
+    } else if(val === null && (expected == 'string' || expected == 'array')) // keep null
+      sanitized[key] = val;
   });
 
   return sanitized;
@@ -153,7 +152,7 @@ Collection.prototype.sanitizeQuery = function (query) {
       sanitized[key] = '' + val;
     } else if(expected == 'number' && actual == 'string') {
       sanitized[key] = parseFloat(val);
-    } else if(expected == 'boolean' && actual != 'boolean') {
+    } else if(expected == 'boolean' && actual == 'string') {
       sanitized[key] = (val === 'true') ? true : false;
     } else if(expected == 'object') {
       sanitized[key] = val;
@@ -224,9 +223,8 @@ Collection.prototype.parseId = function(ctx) {
 
 Collection.prototype.count = function(ctx, fn) {
 //appcorner: comment to enable count
-//  if (ctx.session.isRoot) { 
-    var collection = this
-      , store = this.store
+//  if (ctx.session.isRoot) {
+    var store = this.store
       , sanitizedQuery = this.sanitizeQuery(ctx.query || {});
 
     store.count(sanitizedQuery, function (err, result) {
@@ -244,8 +242,7 @@ Collection.prototype.count = function(ctx, fn) {
 
 Collection.prototype.indexOf = function(id, ctx, fn) {
   if (ctx.session.isRoot) {
-    var collection = this
-      , store = this.store
+    var store = this.store
       , sanitizedQuery = this.sanitizeQuery(ctx.query || {});
 
     sanitizedQuery.$fields = {id: 1};
@@ -277,9 +274,6 @@ Collection.prototype.find = function (ctx, fn) {
   var collection = this
     , store = this.store
     , query = ctx.query || {}
-    , session = ctx.session
-    , client = ctx.dpd
-    , errors
     , data
     , sanitizedQuery = this.sanitizeQuery(query);
 
@@ -302,54 +296,65 @@ Collection.prototype.find = function (ctx, fn) {
     fn(null, result);
   }
 
-  debug('finding %j; sanitized %j', query, sanitizedQuery);
+  function doFind() {
+    // resanitize query in case it was modified from BeforeRequest event
+    sanitizedQuery = collection.sanitizeQuery(query);
 
-  store.find(sanitizedQuery, function (err, result) {
-    debug("Find Callback");
-    if(err) return done(err);
-    debug('found %j', err || result || 'none');
-    if(!collection.shouldRunEvent(collection.events.Get, ctx)) {
-      return done(err, result);
-    }
+    debug('finding %j; sanitized %j', query, sanitizedQuery);
+    store.find(sanitizedQuery, function (err, result) {
+      debug("Find Callback");
+      if(err) return done(err);
+      debug('found %j', err || result || 'none');
+      if(!collection.shouldRunEvent(collection.events.Get, ctx)) {
+        return done(err, result);
+      }
 
-    var errors = {};
+      var errors = {};
 
-    if(Array.isArray(result)) {
+      if(Array.isArray(result)) {
 
-      var remaining = result && result.length;
-      if(!remaining) return done(err, result);
-      result.forEach(function (data) {
+        var remaining = result && result.length;
+        if(!remaining) return done(err, result);
+        result.forEach(function (data) {
+          // domain for onGet event scripts
+          var domain = collection.createDomain(data, errors);
+
+          collection.events.Get.run(ctx, domain, function (err) {
+            if (err) {
+              if (err instanceof Error) {
+                return done(err);
+              } else {
+                errors[data.id] = err;
+              }
+            }
+
+            remaining--;
+            if(!remaining) {
+              done(null, result.filter(function(r) {
+                return !errors[r.id];
+              }));
+            }
+          });
+        });
+      } else {
         // domain for onGet event scripts
-        var domain = createDomain(data, errors);
+        data = result;
+        var domain = collection.createDomain(data, errors);
 
         collection.events.Get.run(ctx, domain, function (err) {
-          if (err) {
-            if (err instanceof Error) {
-              return done(err);
-            } else {
-              errors[data.id] = err;
-            }
-          }
+          if(err) return done(err);
 
-          remaining--;
-          if(!remaining) {
-            done(null, result.filter(function(r) {
-              return !errors[r.id];
-            }));
-          }
+          done(null, data);
         });
-      });
-    } else {
-      // domain for onGet event scripts
-      data = result;
-      var domain = createDomain(data, errors);
+      }
+    });
+  }
 
-      collection.events.Get.run(ctx, domain, function (err) {
-        if(err) return done(err);
-
-        done(null, data);
-      });
-    }
+  var beforeRequestDomain = { event: "GET" };
+  collection.addDomainAdditions(beforeRequestDomain);
+  collection.doBeforeRequestEvent(ctx, beforeRequestDomain, function(err) {
+    if (err) return fn(err);
+    doFind();
   });
 };
 
@@ -365,31 +370,77 @@ Collection.prototype.find = function (ctx, fn) {
 Collection.prototype.remove = function (ctx, fn) {
   var collection = this
     , store = this.store
-    , session = ctx.session
     , query = ctx.query
     , sanitizedQuery = this.sanitizeQuery(query)
     , errors;
 
   if(!(query && query.id)) return fn('You must include a query with an id when deleting an object from a collection.');
-  store.find(sanitizedQuery, function (err, result) {
-    if(err) {
-      return fn(err);
-    }
 
-    function done(err) {
-      if(err) return fn(err);
-      store.remove(sanitizedQuery, fn);
-      if(session.emitToAll) session.emitToAll(collection.name + ':changed');
-    }
+  function doRemove() {
+    store.find(sanitizedQuery, function (err, result) {
+      if(err) {
+        return fn(err);
+      }
 
-    if(collection.shouldRunEvent(collection.events.Delete, ctx)) {
-      var domain = createDomain(result, errors);
+      // if a single id was passed and it wasn't found, we'll get undefined
+      // convert it to an empty array which will be handled below
+      if (typeof result === 'undefined') {
+        result = [];
+      }
+      // convert result to an array if it is not
+      if (!Array.isArray(result)) {
+        result = [result];
+      }
 
-      domain['this'] = domain.data = result;
-      collection.events.Delete.run(ctx, domain, done);
-    } else {
-      done();
-    }
+      // nothing to delete
+      if (result.length === 0) {
+        return fn(null, { count: 0 });
+      }
+
+      var remaining = result.length
+        , idsToDelete = [];
+
+      function done(data, err) {
+        var id = data.id;
+        remaining--;
+        if (result.length === 1 && err) {
+          // we only have one row to delete but an error has occured, pass it through
+          return fn(err);
+        }
+
+        if (err && err instanceof Error) {
+          // only halt execution if an actual error was thrown from the script
+          // cancel() from within the script is not an instance of Error, so it will be ignored by this
+          return fn(err);
+        } else if (!err) {
+          // script executed without an error, this id will be deleted
+          idsToDelete.push(id);
+        }
+
+        if(!remaining) {
+          store.remove({ id: { $in: idsToDelete } }, function(){
+            collection.doAfterCommitEvent('DELETE', ctx, data);
+            fn.apply(null, arguments);
+          });
+        }
+      }
+
+      result.forEach(function(data) {
+        if (collection.shouldRunEvent(collection.events.Delete, ctx)) {
+          var domain = collection.createDomain(data, errors);
+          collection.events.Delete.run(ctx, domain, function (err) { done(data, err);  });
+        } else {
+          done(data);
+        }
+      });
+    });
+  }
+
+  var beforeRequestDomain = { event: "DELETE" };
+  collection.addDomainAdditions(beforeRequestDomain);
+  collection.doBeforeRequestEvent(ctx, beforeRequestDomain, function(err) {
+    if (err) return fn(err);
+    doRemove();
   });
 };
 
@@ -404,11 +455,9 @@ Collection.prototype.remove = function (ctx, fn) {
 Collection.prototype.save = function (ctx, fn) {
   var collection = this
     , store = this.store
-    , session = ctx.session
     , item = ctx.body
 
     , query = ctx.query || {}
-    , client = ctx.dpd
     , errors = {};
 
   if(!item) return done('You must include an object when saving or updating.');
@@ -440,15 +489,20 @@ Collection.prototype.save = function (ctx, fn) {
     fn(errors || err, item);
   }
 
-  var domain = createDomain(item, errors);
+  var domain = collection.createDomain(item, errors);
+
+  domain.protectedKeys = [];
 
   domain.protect = function(property) {
-    delete domain.data[property];
+    if (domain.data.hasOwnProperty(property)) {
+      domain.protectedKeys.push(property);
+      delete domain.data[property];
+    }
   };
 
   domain.changed =  function (property) {
     if(domain.data.hasOwnProperty(property)) {
-      if(domain.previous && domain.previous[property] === domain.data[property]) {
+      if(domain.previous && _.isEqual(domain.previous[property], domain.data[property])) {
         return false;
       }
 
@@ -476,7 +530,7 @@ Collection.prototype.save = function (ctx, fn) {
 
       // copy previous obj
       Object.keys(obj).forEach(function (key) {
-        prev[key] = obj[key];
+        prev[key] = _.clone(obj[key]);
       });
 
       // merge changes
@@ -517,10 +571,8 @@ Collection.prototype.save = function (ctx, fn) {
         store.update({id: query.id}, item, function (err) {
           if(err) return done(err);
           item.id = id;
-
+          collection.doAfterCommitEvent('PUT', ctx, item, prev, domain.protectedKeys);
           done(null, item);
-
-          if(session && session.emitToAll) session.emitToAll(collection.name + ':changed');
         });
       }
 
@@ -536,12 +588,21 @@ Collection.prototype.save = function (ctx, fn) {
   }
 
   function post() {
+    collection.execCommands('update', item, commands);
     var errs = collection.validate(item, true);
 
     if(errs) return done({errors: errs});
 
     // generate id before event listener
     item.id = store.createUniqueIdentifier();
+
+    function commit(){
+      store.insert(item, function(err, data) {
+        if (err) return done(err);
+        collection.doAfterCommitEvent('POST', ctx, item);
+        done(null, data);
+      });
+    }
 
     if(collection.shouldRunEvent(collection.events.Post, ctx)) {
       collection.events.Post.run(ctx, domain, function (err) {
@@ -551,28 +612,42 @@ Collection.prototype.save = function (ctx, fn) {
         }
         if(err || domain.hasErrors()) return done(err || errors);
         debug('inserting item', item);
-        store.insert(item, done);
-        if(session && session.emitToAll) session.emitToAll(collection.name + ':changed');
+
+        commit();
       });
     } else {
-      store.insert(item, done);
-      if(session && session.emitToAll) session.emitToAll(collection.name + ':changed');
+      commit();
     }
   }
 
+  var beforeRequestDomain = { event: "POST", data: item };
+  collection.addDomainAdditions(beforeRequestDomain);
+
   if (query.id) {
-    put();
+    beforeRequestDomain.event = "PUT";
+    collection.doBeforeRequestEvent(ctx, beforeRequestDomain, function(err) {
+      if (err) return fn(err);
+      put();
+    });
   } else if (collection.shouldRunEvent(collection.events.Validate, ctx)) {
-    collection.events.Validate.run(ctx, domain, function (err) {
-      if(err || domain.hasErrors()) return done(err || errors);
-      post();
+    collection.doBeforeRequestEvent(ctx, beforeRequestDomain, function(err) {
+      if (err) return fn(err);
+      collection.events.Validate.run(ctx, domain, function (err) {
+        if(err || domain.hasErrors()) return done(err || errors);
+        post();
+      });
     });
   } else {
-    post();
+    collection.doBeforeRequestEvent(ctx, beforeRequestDomain, function(err) {
+      if (err) return fn(err);
+      post();
+    });
   }
 };
 
-function createDomain(data, errors) {
+Collection.prototype.createDomain = function(data, errors) {
+  var collection = this;
+
   var hasErrors = false;
   var domain = {
     error: function(key, val) {
@@ -597,8 +672,48 @@ function createDomain(data, errors) {
     'this': data,
     data: data
   };
+  collection.addDomainAdditions(domain);
   return domain;
-}
+};
+
+Collection.prototype.addDomainAdditions = function(domain) {
+  var collection = this;
+  _.each(Collection.domainAdditions, function(value, name) {
+    if (typeof value === "function") {
+      // bind `this` to collection on any added functions
+      domain[name] = value.bind({collection: collection, domain: domain});
+    } else {
+      domain[name] = value;
+    }
+  });
+};
+
+Collection.prototype.doAfterCommitEvent = function(method, ctx, data, previous, protectedKeys) {
+  var collection = this;
+  if (collection.shouldRunEvent(collection.events.AfterCommit, ctx)) {
+    data = _.clone(data);
+    if (protectedKeys && protectedKeys.length > 0 && previous) {
+      // add back whatever fields were protected, because they are removed from data
+      protectedKeys.forEach(function (key) {
+        data[key] = previous[key];
+      });
+    }
+    var domain = {data: data, 'this': data, method: method, previous: previous};
+    collection.addDomainAdditions(domain);
+    collection.events.AfterCommit.run(ctx, domain, function (err) {
+      if (err) debug('AfterCommit errors in script: %j', err);
+    });
+  }
+};
+
+Collection.prototype.doBeforeRequestEvent = function(ctx, domain, fn) {
+  var collection = this;
+  if (collection.shouldRunEvent(collection.events.BeforeRequest, ctx)) {
+    collection.events.BeforeRequest.run(ctx, domain, fn);
+  } else {
+    fn();
+  }
+};
 
 Collection.defaultPath = '/my-objects';
 
@@ -612,12 +727,13 @@ Collection.prototype.configChanged = function(config, fn) {
 
   debug('resource changed');
 
-  var properties = config && config.properties
-    , renames;
-
   if(config.id && config.id !== this.name) {
     store.rename(config.id.replace('/', ''), function (err) {
-        fn(err);
+        if(err && err.message === "source namespace does not exist") {
+          fn();
+        } else {
+          fn(err);
+        }
     });
     return;
   }
@@ -682,6 +798,14 @@ Collection.prototype.execCommands = function (type, obj, commands) {
                 }
               }
             }
+            if (k === '$addUnique') {
+              val = Array.isArray(val) ? val : [val];
+              if(Array.isArray(obj[key])) {
+                obj[key] = _.union(obj[key], val);
+              } else {
+                obj[key] = val;
+              }
+            }
           });
         }
       });
@@ -692,10 +816,18 @@ Collection.prototype.execCommands = function (type, obj, commands) {
   return this;
 };
 
-Collection.prototype.shouldRunEvent = function(ev, ctx) {
+Collection.prototype.shouldRunEvent = function (ev, ctx) {
+  // check if a property is set on the context to ignore cascading to other events
+  // used internally
+  if (ctx && ctx._internalSkipEvents) return false;
+
   var skipEvents = ctx && ((ctx.body && ctx.body.$skipEvents) || (ctx.query && ctx.query.$skipEvents))
     , rootPrevent = ctx && ctx.session && ctx.session.isRoot && skipEvents;
   return !rootPrevent && ev;
+};
+
+Collection.extendDomain = function(name, val) {
+    Collection.domainAdditions[name] = val;
 };
 
 module.exports = Collection;
