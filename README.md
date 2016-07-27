@@ -1,7 +1,7 @@
 AppCorner
 ============
 
-Share your favorites apps on AppCorner and discover new apps around the world with your friends. The easy way to bookmarks apps with your iPhone on your website for free!
+Share your favorites apps on AppCorner and discover new apps around the world with your friends, it's also the easiest way to bookmarks apps with your iPhone on your website!
 
 This app for iPhone use [Deployd](http://deployd.com) as server (a great open source platform over mongodb and node.js) that run on [appcorner.it](http://www.appcorner.it/en/). 
 
@@ -26,18 +26,17 @@ You can build your social app to publish on App Store that share musics, books o
 ###The story
 - I developed [DeploydKit](https://github.com/appcornerit/DeploydKit)
 - I saw [Anypic](https://github.com/ParsePlatform/Anypic) a full featured photo sharing app built by [Parse.com](https://parse.com)
-- I developed a layer called [ParseKit] (https://github.com/appcornerit/AppCorner-Social/tree/master/External/ParseKit) to replace Parse framework on top of DeploydKit
+- I developed a layer called [ParseKit] (https://github.com/appcornerit/AppCorner-Social/tree/master/External/ParseKit) to replace Parse framework (it wasn't open source at the time) on top of DeploydKit
 - I developed the code of the server quickly
 - Anypic works with Deployd!
 - I moved the photo entity as app entity (and other customizations) and so the new name is AppCorner
 - AppCorner works with Deployd!
 - I forgot the app for some time
 - I developed [iTunesPicker](https://github.com/appcornerit/iTunesPicker) as new project starting from pieces of AppCorner
-- Now AppCorner is open source
+- I released AppCorner is open source
+- I forgot the app again, but still works
 
 To retrieve statistics about apps (or any other iTunes entity) take a look at the [iTunesPicker](https://github.com/appcornerit/iTunesPicker) project.
 I encourage anyone who wants to contribute and update the project.
 
 **Author**: Denis Berton [@DenisBerton](https://twitter.com/DenisBerton)
-
-
