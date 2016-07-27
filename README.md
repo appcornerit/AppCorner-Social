@@ -33,8 +33,8 @@ You can build your social app to publish on App Store that share musics, books o
 - AppCorner works with Deployd!
 - I forgot the app for some time
 - I developed [iTunesPicker](https://github.com/appcornerit/iTunesPicker) as new project starting from pieces of AppCorner
-- I released AppCorner is open source
-- I forgot the app again, but still works
+- I released AppCorner open source
+- I forgot the app again, but still works fine
 
 To retrieve statistics about apps (or any other iTunes entity) take a look at the [iTunesPicker](https://github.com/appcornerit/iTunesPicker) project.
 I encourage anyone who wants to contribute and update the project.
