@@ -9,21 +9,21 @@ You can use AppCorner on appcorner.it to share your apps with others developers,
 
 **To see your app on appcorner.it (website/twitter/facebook) and iTunesPicker as price reduction, post your app on appcorner social with the red clock icon enabled at least 12 hours before change the price from the App Store.**  
 
-###Show apps on your web site for free and make money with iTunes Affiliate Program
+### Show apps on your web site for free and make money with iTunes Affiliate Program
 **You can create a website with price drops as [appcorner.it](http://www.appcorner.it/en/) in minutes**, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it).
  Price drops are also available on your iPhone, take a look at the [iTunesPicker](https://github.com/appcornerit/iTunesPicker) project.
 
 You can also use AppCorner for iPhone to show your posted apps (in any country and language available in App Store) with your comments on your website using appcorner.it as service for free (without install deployd on your server), refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/appcorner.it)
 
-###AppCorner on your server
+### AppCorner on your server
 **Build your server is quite simple**, refer to [README](https://github.com/appcornerit/AppCorner-Social/tree/master/Deployd-Modules) to try the app with your server (on localhost or aws or with loopback as backend instead of deployd).
 
 This project uses APN, WebSockets and containts an updated version of [DeploydKit](https://github.com/appcornerit/AppCorner-Social/tree/master/External/DeploydKit) project.
 
-###Publish on App Store
+### Publish on App Store
 You can build your social app to publish on App Store that share musics, books or TV series (from iTunes) quickly with few changes in DAAppsViewController.m, PAAppStoreQuery.m.
 
-###The story
+### The story
 - I developed [DeploydKit](https://github.com/appcornerit/DeploydKit)
 - I saw [Anypic](https://github.com/ParsePlatform/Anypic) a full featured photo sharing app built by [Parse.com](https://parse.com)
 - I developed a layer called [ParseKit] (https://github.com/appcornerit/AppCorner-Social/tree/master/External/ParseKit) to replace Parse framework (it wasn't open source at the time) on top of DeploydKit
